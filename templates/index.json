@@ -39,5 +39,5 @@
       "settings": {}
     }
   },
-  "order": ["image_banner","Hero", "featured_products", "image_text"]
+  "order": ["image_banner","hero", "featured_products", "image_text"]
 }
