@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="{{ 'hero.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'hero.css' | asset_url | stylesheet_tag }}</noscript>
+
+
+<section class="hero">
+  <img src="" class="hero__sale" alt="sale" />
+  <div class="hero__left">
+  <div class="hero__left__emptySpace"></div>
+
+    <div class="hero__left__content">
+
+    <h2 class="hero__left__content__heading">Oil-free Shine</h2>
+<p class="hero__left__content__body">We have ingrendients that are of the most premium quality. Created with love and care to provide the finest glow to an oily face.</p>
+</div>
+
+<div class="hero__left__featured">
+<ul class="hero__left__featured__buttons">
+<li>New</li>
+<li>Fresh</li>
+<li>Popular</li>
+
+</ul>
+<div class="hero__left__featured__img" >
+<img  src="{{ 'makeup.jpg' | asset_url }}" alt="product" />
+</div>
+</div>
+  </div>
+  <div class="hero__right">
+  <img src="{{ 'model.jpg' | asset_url }}" alt="woman posing" />
+  </div>
+</section>
+
+
+
+
+
+{% schema %}
+{
+  "name": "t:sections.collection-list.name",
+  "class": "spaced-section",
+  "tag": "section",
+  "max_blocks": 12,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.collection-list.settings.title.label",
+      "default": "Hero"
+    },
+    
+  ],
+  "presets": [
+    {
+      "name": "t:sections.collection-list.presets.name",
+      "blocks": [
+        {
+          "type": "hero"
+        },
+        
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+

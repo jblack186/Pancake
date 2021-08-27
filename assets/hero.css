@@ -1,0 +1,226 @@
+/* Hero One */
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  max-height: 90vh;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    max-height: 100%;
+  }
+}
+
+.hero__sale {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .hero__sale {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+    z-index: 5;
+  }
+}
+
+.hero__left {
+  background: #fef7ee;
+  position: relative;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 868px) {
+  .hero__left {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background: url("../img/model.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.hero__left__emptySpace {
+  height: 30%;
+}
+
+.hero__left__content {
+  height: 40%;
+  width: 90%;
+  margin: 0 auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 868px) {
+  .hero__left__content {
+    color: white;
+  }
+}
+
+.hero__left__content__heading {
+  font-size: 4.2rem;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+@media (max-width: 868px) {
+  .hero__left__content__heading {
+    font-size: 3.5rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+}
+
+.hero__left__content__body {
+  max-width: 90%;
+  line-height: 31px;
+}
+
+.hero__left__featured {
+  margin: 0 auto;
+  width: 90%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .hero__left__featured {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 100%;
+  }
+}
+
+@media (max-width: 992px) and (max-width: 868px) {
+  .hero__left__featured {
+    display: none;
+  }
+}
+
+.hero__left__featured ul {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.hero__left__featured ul li {
+  list-style: none;
+}
+
+.hero__left__featured__img {
+  position: relative;
+  z-index: 2;
+}
+
+.hero__left__featured__img img {
+  width: 300px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .hero__left__featured__img img {
+    width: 330px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.hero__left__featured__img::before {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  content: 'Get yours now';
+  top: -90px;
+  left: -170px;
+  width: 200px;
+  height: 200px;
+  border-radius: 300px;
+  border: 1px solid black;
+  z-index: 5;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .hero__left__featured__img::before {
+    display: none;
+  }
+}
+
+@media (max-width: 868px) {
+  .hero__left::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+}
+
+.hero__right {
+  width: 40%;
+}
+
+@media (max-width: 868px) {
+  .hero__right {
+    display: none;
+  }
+}
+
+.hero__right img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=Hero.css.map */
