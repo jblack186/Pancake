@@ -1,0 +1,125 @@
+.header {
+  width: 100%;
+  min-height: 60px;
+}
+
+@media (max-width: 767px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 767px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    z-index: 7;
+    background: white;
+  }
+}
+
+.header__list {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0;
+}
+
+@media (max-width: 767px) {
+  .header__list {
+    display: none;
+  }
+}
+
+.header__list__left {
+  width: 30%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__list__mid {
+  width: 30%;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__list__right {
+  width: 30%;
+  
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__list__right__item {
+  margin-left: 28px;
+}
+
+
+
+ .mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+   .mobile {
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+/* react specific */
+
+
+
+  .header__list__right__item--search {
+    width: 20px;
+  }
+  
+  .header__list__right__item--bag {
+    width: 20px;
+  }
+  
+
+  .mobile img {
+    width: 20px;
+    cursor: pointer;
+  }
+
+/*# sourceMappingURL=Header.css.map */
