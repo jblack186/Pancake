@@ -5,7 +5,7 @@
         "type": "header",
         "settings": {
           "header_type": "headerOne",
-          "logo": "shopify:\/\/shop_images\/rentLogo.png",
+          "logo": "shopify:\/\/shop_images\/jupyter.png",
           "logo_width": 70,
           "menu": "main-jamies-menu",
           "menu_two": "main-menu"
