@@ -21,10 +21,10 @@
         
       </li>
       <li class="header__list__left__item">
-        ABOUT
+        {{ link.title | escape }}
       </li>
       <li class="header__list__left__item">
-        CONTACT
+        {{ link.title | escape }}
       </li>
     {%- endif -%}
   {%- endfor -%}
