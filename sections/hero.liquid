@@ -22,14 +22,14 @@
 
 </ul>
 <div class="hero__left__featured__img" >
-<img  srcset="{{ 'makeup.jpg' | asset_url }}" alt="product" />
+<img  src="{{ 'makeup.jpg' | asset_url }}" alt="product" />
 </div>
 </div>
   </div>
   <div class="hero__right">
     {%- if block.settings.image != blank -%}
 
-    <img src="{{ block.settings.image |  img_url: '90vh'}}" alt="product" />
+    <img srcset="{{ block.settings.image |  img_url: '90vh'}}" alt="hero" />
     {%- else -%}
   <img src="{{ 'model.jpg' | asset_url }}" alt="woman posing" />
    {%- endif -%}
