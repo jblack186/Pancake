@@ -10,10 +10,10 @@
 
 <header class="headers">
   <ul class="header__list">
-   
+    {%- for link in section.settings.menu.links -%}
     <div class="header__list__left">
-      
-        {%- for link in section.settings.menu.links -%}
+      {%- if section.settings.menu != blank -%}
+        
         {%- if link.links == blank -%}
       <li class="header__list__left__item">
        
@@ -21,16 +21,15 @@
         
       </li>
       <li class="header__list__left__item">
-        {{ link.title | escape }}
+        ABOUT
       </li>
       <li class="header__list__left__item">
-        {{ link.title | escape }}
+        CONTACT
       </li>
     {%- endif -%}
-  {%- endfor -%}
- 
+  
+  {%- endif %}
       </div>
-   
       <div class="header__list__mid">
         <a class="header__list__mid__logo">
           {%- if section.settings.logo != blank -%}
@@ -57,8 +56,8 @@
 
       </li>
       </div>
+    {%- endfor -%}
   </ul>
-
   <div class="mobile">
     <div> </div>
     <img class="mobile__bars" src="{{ 'menu.svg' | asset_url }}" alt="Bars" />
