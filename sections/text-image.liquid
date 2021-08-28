@@ -31,3 +31,85 @@
 
   </div>
 </section>
+
+{% schema %}
+{
+  
+  "name": "Image-text options",
+  "max_blocks": 3,
+  "blocks": [
+    {
+      "name": "Image Text",
+      "type": "text",
+      "settings": [
+    
+    {
+ 
+          "type": "text",
+          "id": "heading",
+          "label": "Hero heading",
+          "default": "Beauty Shop"
+        },
+ 
+        {
+          "type": "text",
+          "id": "body",
+          "label": "Hero body",
+          "default": "We have ingrendients that are of the most premium quality. Created with love and care to provide the finest glow to an oily face."
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "hero_image"
+          
+          },
+          {
+            "type": "image_picker",
+            "id": "featureImage",
+            "label": "feature-image"
+            
+            },
+              {
+                "type": "range",
+                "id": "featuredImg_width",
+                "min": 50,
+                "max": 350,
+                "step": 10,
+                "unit": "t:sections.header.settings.logo_width.unit",
+                "label": "Featured image size",
+                "default": 180
+              },
+            {
+              "type": "select",
+              "id": "position",
+              "label": "Large hero image position",
+              "default": "right",
+              "options": [
+                {
+                  "value": "left",
+                  "label": "Left"
+                },
+                  {
+                    "value": "right",
+                    "label": "Right"
+                  }
+  
+              ]
+              
+              }
+          
+
+
+      ]
+    }
+
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "text"
+      }
+    ]
+  }
+}
+{% endschema %}
