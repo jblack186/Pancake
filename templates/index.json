@@ -13,20 +13,10 @@
             "featuredImg_width": 170,
             "position": "right"
           }
-        },
-        "c6b4bc09-7493-474c-9f07-4800a648f9ed": {
-          "type": "text",
-          "settings": {
-            "heading": "Beauty Shop",
-            "body": "We have ingrendients that are of the most premium quality. Created with love and care to provide the finest glow to an oily face.",
-            "featuredImg_width": 180,
-            "position": "right"
-          }
         }
       },
       "block_order": [
-        "b7f81788-45bd-4c1b-a185-e136b55d630b",
-        "c6b4bc09-7493-474c-9f07-4800a648f9ed"
+        "b7f81788-45bd-4c1b-a185-e136b55d630b"
       ],
       "settings": {
       }
