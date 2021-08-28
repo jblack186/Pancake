@@ -7,14 +7,24 @@
           "type": "text",
           "settings": {
             "heading": "Beauty Shop",
-            "body": "We have ingrendients that are of the most premium quality. Created with love and care to provide the finest glow to an oily face.",
+            "body": "We have ingrendients dffffhat are of the most premium quality. Created with love and care to provide the finest glow to an oily face.",
             "image": "shopify:\/\/shop_images\/woman-stands-in-the-kitchen-and-smiles-while-using-cell-phone.jpg",
-            "feature-image": "shopify:\/\/shop_images\/element5-digital-ceWgSMd8rvQ-unsplash.jpg"
+            "feature-image": "shopify:\/\/shop_images\/element5-digital-ceWgSMd8rvQ-unsplash.jpg",
+            "position": "left"
+          }
+        },
+        "c6b4bc09-7493-474c-9f07-4800a648f9ed": {
+          "type": "text",
+          "settings": {
+            "heading": "Beauty Shop",
+            "body": "We have ingrendients that are of the most premium quality. Created with love and care to provide the finest glow to an oily face.",
+            "position": "right"
           }
         }
       },
       "block_order": [
-        "b7f81788-45bd-4c1b-a185-e136b55d630b"
+        "b7f81788-45bd-4c1b-a185-e136b55d630b",
+        "c6b4bc09-7493-474c-9f07-4800a648f9ed"
       ],
       "settings": {
       }
