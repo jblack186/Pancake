@@ -29,7 +29,7 @@
   <div class="hero__right">
     {%- if block.settings.image != blank -%}
 
-    <img src="{{ block.settings.image | escape }}" alt="product" />
+    <img src="{{ block.settings.image }}" alt="product" />
     {%- else -%}
   <img src="{{ 'model.jpg' | asset_url }}" alt="woman posing" />
    {%- endif -%}
