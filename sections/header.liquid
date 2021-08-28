@@ -12,13 +12,13 @@
   <ul class="header__list">
     
     <div class="header__list__left">
-     
+      {%- if section.settings.menu != blank -%}
+        {%- for link in section.settings.menu.links -%}
+        {%- if link.links == blank -%}
       <li class="header__list__left__item">
-        {%- if link.links != blank -%}
-          {{ link.title | escape }}
-            {%else%}
-            SHOP
-        {%- endif -%}
+       
+        {{ link.title | escape }}
+        
       </li>
       <li class="header__list__left__item">
         ABOUT
@@ -26,7 +26,9 @@
       <li class="header__list__left__item">
         CONTACT
       </li>
-    
+    {%- endif -%}
+  {%- endfor -%}
+  {%- endif %}
       </div>
       <div class="header__list__mid">
         <a class="header__list__mid__logo">
