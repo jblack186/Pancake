@@ -22,10 +22,10 @@
 
 </ul>
 <div class="hero__left__featured__img" >
-  {%- if blocks.settings.featureImage != blank -%}
-    {%- assign image_size = blocks.settings.featuredImg_width | append: 'x' -%}
-    <img srcset="{{ blocks.settings.featureImage | img_url: image_size }} 1x, {{ blocks.settings.featureImage | img_url: image_size, scale: 2 }} 2x"
-      src="{{ blocks.settings.featureImage | img_url: image_size }}"
+  {%- if section.settings.featureImage != blank -%}
+    {%- assign image_size = section.settings.featuredImg_width | append: 'x' -%}
+    <img srcset="{{ section.settings.featureImage | img_url: image_size }} 1x, {{ section.settings.featureImage | img_url: image_size, scale: 2 }} 2x"
+      src="{{ section.settings.featureImage | img_url: image_size }}"
       loading="lazy"
       class="hero__left__featured__img-image"
       alt="hero">
