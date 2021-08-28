@@ -23,7 +23,8 @@
 </ul>
 <div class="hero__left__featured__img" >
   {%- if block.settings.feature-image != blank -%}
-    <img srcset="{{ block.settings.feature-image |  img_url: '490x'}}" alt="hero" />
+    {%- assign image_size = section.settings.featured-image_width | append: 'x' -%}
+    <img srcset="{{ block.settings.feature-image |  img_url: image_size}}" alt="hero" />
 
     {%- else -%}
 
@@ -85,6 +86,16 @@
             "label": "feature-image"
             
             },
+              {
+                "type": "range",
+                "id": "featured-img_width",
+                "min": 50,
+                "max": 250,
+                "step": 10,
+                "unit": "px",
+                "label": "Featured image size",
+                "default": 180
+              },
             {
               "type": "select",
               "id": "position",
