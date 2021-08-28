@@ -9,7 +9,7 @@
 
     <div class="hero__left__content">
 
-    <h2 class="hero__left__content__heading">Oil-free Shine</h2>
+    <h2 class="hero__left__content__heading">{{ block.settings.hero_heading | escape }}</h2>
 <p class="hero__left__content__body">We have ingrendients that are of the most premium quality. Created with love and care to provide the finest glow to an oily face.</p>
 </div>
 
@@ -36,27 +36,31 @@
 
 {% schema %}
 {
-  "name": "Hero Image Position",
-  "settings": [
+  "name": "t:sections.hero_heading.name",
+  "max_blocks": 12,
+  "blocks": [
     {
-    "type": "select",
-    "id": "hero_image_position",
-    "label": "Hero Image Position",
-    "options": [
-      {
-      "value": "Right",
-      "label": "Position image right"
-      },
-      {
-        "value": "Left",
-        "label": "Position image left"
-    
-      }
-    ],
-    "default": "Right"
-    }
+      "type": "hero_heading",
+      "name": "t:sections.hero_heading.blocks.hero_heading.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "t:sections.hero_heading.blocks.hero_heading.settings.text.label",
+          "default": "Beauty Shop"
+        }
 
-  ]
+
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "hero_heading"
+      }
+    ]
+  }
 }
 {% endschema %}
 
