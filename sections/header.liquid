@@ -15,9 +15,6 @@
       {%- if link.links == blank -%}
         {%- for link in section.settings.menu.links -%}
           {%- if section.settings.menu != blank -%}
-      
-       
-
       <li class="header__list__left__item">
         <a href="{{ link.url }}">{{ link.title | escape }}</a>
       </li>
@@ -70,19 +67,20 @@
         <div class="header__list__mid">
               <h1 class="header__list__mid__logo">honest</h1>
           </div>
-  
           <div class="header__list__left">
+     
+            {%- if link.links == blank -%}
+              {%- for link in section.settings.menu.links -%}
+                {%- if section.settings.menu != blank -%}
             <li class="header__list__left__item">
-              SHOP
+              <a href="{{ link.url }}">{{ link.title | escape }}</a>
             </li>
-            <li class="header__list__left__item">
-              ABOUT
-            </li>
-            <li class="header__list__left__item">
-              CONTACT
-            </li>
+          {%- endif -%}
+        {%- endfor -%}
+        {%- endif %}
+      
             </div>
-          <div class="header__list__right">
+                <div class="header__list__right">
             <li class="header__list__right__item">
               <img class="header__list__right__item--search" src="{{ 'search.svg' | asset_url }}" alt="search" />
             </li>
