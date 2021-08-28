@@ -10,8 +10,8 @@
 
     <div class="hero__left__content">
 
-    <h2 class="hero__left__content__heading">{{ block.settings.text | escape }}</h2>
-<p class="hero__left__content__body">We have ingrendients that are of the most premium quality. Created with love and care to provide the finest glow to an oily face.</p>
+    <h2 class="hero__left__content__heading">{{ block.settings.heading | escape }}</h2>
+<p class="hero__left__content__body">{{ block.settings.body | escape }}</p>
 </div>
 
 <div class="hero__left__featured">
@@ -47,14 +47,29 @@
       "settings": [
         {
           "type": "text",
-          "id": "text",
+          "id": "heading",
           "label": "Hero heading",
           "default": "Beauty Shop"
         }
 
 
       ]
+    },
+    {
+      "type": "hero_body",
+      "name": "Body",
+      "settings": [
+        {
+          "type": "text",
+          "id": "body",
+          "label": "Hero body",
+          "default": "We have ingrendients that are of the most premium quality. Created with love and care to provide the finest glow to an oily face."
+        }
+
+
+      ]
     }
+
   ],
   "default": {
     "blocks": [
