@@ -3,15 +3,16 @@
     "hero": {
       "type": "hero",
       "blocks": {
-        "d5a93a1f-9e0e-4d1c-b11a-5534782eaba7": {
-          "type": "hero_heading",
+        "b7f81788-45bd-4c1b-a185-e136b55d630b": {
+          "type": "text",
           "settings": {
-            "text": "Stay Glowing"
+            "heading": "Beauty Shop",
+            "body": "We have ingrendients that are of the most premium quality. Created with love and care to provide the finest glow to an oily face."
           }
         }
       },
       "block_order": [
-        "d5a93a1f-9e0e-4d1c-b11a-5534782eaba7"
+        "b7f81788-45bd-4c1b-a185-e136b55d630b"
       ],
       "settings": {
       }
