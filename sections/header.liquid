@@ -12,7 +12,7 @@
   <ul class="header__list">
     
     <div class="header__list__left">
-      {%- for link in section.settings.menu.links -%}
+     
       <li class="header__list__left__item">
         {%- if link.links != blank -%}
           {{ link.title | escape }}
@@ -26,7 +26,7 @@
       <li class="header__list__left__item">
         CONTACT
       </li>
-    {%- endfor -%}
+    
       </div>
       <div class="header__list__mid">
         <a class="header__list__mid__logo">
