@@ -24,7 +24,11 @@
 <div class="hero__left__featured__img" >
   {%- if block.settings.feature-image != blank -%}
     {%- assign image_size = block.settings.featured-image_width | append: 'x' -%}
-    <img srcset="{{ block.settings.feature-image |  img_url: image_size}}" alt="hero" />
+    <img srcset="{{ block.settings.feature-image | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+      src="{{ block.settings.feature-image | img_url: image_size }}"
+      loading="lazy"
+      class="hero__left__featured__img-image"
+      alt="hero">
 
     {%- else -%}
 
