@@ -10,12 +10,12 @@
 
 <header class="headers">
   <ul class="header__list">
-    {%- if link.links == blank -%}
-    {%- for link in section.settings.menu.links -%}
-      {%- if section.settings.menu != blank -%}
     <div class="header__list__left">
      
-        
+      {%- if link.links == blank -%}
+        {%- for link in section.settings.menu.links -%}
+          {%- if section.settings.menu != blank -%}
+      
        
       <li class="header__list__left__item">
        
@@ -28,11 +28,11 @@
       <li class="header__list__left__item">
         <a href="{{ link.url }}">{{ link.title | escape }}</a>
       </li>
-    
-      </div>
     {%- endif -%}
   {%- endfor -%}
   {%- endif %}
+
+      </div>
     
       <div class="header__list__mid">
         <a class="header__list__mid__logo">
