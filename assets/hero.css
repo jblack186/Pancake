@@ -7,6 +7,10 @@
   min-height: 88vh;
 }
 
+.hero.right {
+  flex-direction: row-reverse;
+}
+
 @media (max-width: 1200px) {
   .hero {
     max-height: 100%;

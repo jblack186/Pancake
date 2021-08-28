@@ -4,7 +4,7 @@
 
 {%- for block in section.blocks -%}
 
-<section class="hero">
+<section class="hero {{block.settings.position}}}">
   <div class="hero__left">
   <div class="hero__left__emptySpace"> </div>
 
@@ -84,7 +84,25 @@
             "id": "feature-image",
             "label": "feature-image"
             
-            }
+            },
+            {
+              "type": "select",
+              "id": "position",
+              "label": "Large hero image position",
+              "default": "right",
+              "options": [
+                {
+                  "value": "left",
+                  "label": "Left"
+                },
+                  {
+                    "value": "right",
+                    "label": "Right"
+                  }
+  
+              ]
+              
+              }
           
 
 
