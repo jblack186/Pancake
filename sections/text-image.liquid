@@ -2,13 +2,16 @@
 
 <noscript>{{ 'text-image.css' | asset_url | stylesheet_tag }}</noscript>
 
-
 <section class="middle">
   <div class="middle__top">
 <div class="middle__top__contain">
     <div class="middle__top__contain__content">
       <h3 class="middle__top__contain__content__heading">the beauty trend</h3>
-      <p class="middle__top__contain__content__body"><div class="line"></div>Treat your skin with a little love, care and makeup.</p>
+      <div class="middle__top__contain__content__body">
+        <div class="line"> </div>
+      <p>Treat your skin with a little love, care and makeup.</p>
+      
+      </div>
       <button class="middle__top__contain__content__button">SHOP COLLECTION</button>
     </div>
     </div>
@@ -16,138 +19,23 @@
     <div class="middle__top__contain__image__banner">
     <h4>OUR PHILOSOPHY</h4>
     <p>We're a wellness and beauty brand empowering eople to live a happy and healthy life.</p></div>
+    {%- if block.settings.image != blank -%}
+      <img src="{{block.settings.image}}" alt="makeup"/>
 
-      <img src={MakeUp} alt="collection" />
+      {% else %}
+      <img src="{{ 'makeup1.jpg' | asset_url }}"  alt="collection" />
     </div>
     
   </div>
-  <div class="middle__bottom">
-  <div class="middle__bottom__contain">
-    <div class="middle__bottom__contain__content">
-      <h3 class="middle__bottom__contain__content__heading">the beauty trend</h3>
-      <p class="middle__bottom__contain__content__body"><div class='line'></div>Treat your skin with a little love, care and makeup.</p>
-      <button class="middle__bottom__contain__content__button">SHOP COLLECTION</button>
-    </div>
-    </div>
-    <div class="middle__bottom__contain__image">
-    <div class="middle__bottom__contain__image__banner">
-    <h4>OUR PHILOSOPHY</h4>
-    <p>We're a wellness and beauty brand empowering eople to live a happy and healthy life.</p></div>
-
-      <img src={MakeUpTwo} alt="collection" />
-    </div>
-
-  </div>
 </section>
+
+
+
+
 {% schema %}
 {
   "name": "Text-Image",
-  "class": "spaced-section spaced-section--full-width",
-  "tag": "section",
   "settings": [
-    {
-      "id": "title",
-      "label": "t:sections.textImage.settings.title.label",
-      "type": "text",
-      "default": "textImage"
-    },
-    {
-      "id": "image_width",
-      "label": "t:sections.textImage.settings.image_width.label",
-      "type": "select",
-      "default": "full",
-      "options": [
-        {
-          "value": "third",
-          "label": "t:sections.textImage.settings.image_width.options__1.label"
-        },
-        {
-          "value": "half",
-          "label": "t:sections.textImage.settings.image_width.options__2.label"
-        },
-        {
-          "value": "full",
-          "label": "t:sections.textImage.settings.image_width.options__3.label"
-        }
-      ]
-    },
-    {
-      "id": "image_ratio",
-      "label": "t:sections.textImage.settings.image_ratio.label",
-      "type": "select",
-      "default": "adapt",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "t:sections.textImage.settings.image_ratio.options__1.label"
-        },
-        {
-          "value": "portrait",
-          "label": "t:sections.textImage.settings.image_ratio.options__2.label"
-        },
-        {
-          "value": "square",
-          "label": "t:sections.textImage.settings.image_ratio.options__3.label"
-        },
-        {
-          "value": "circle",
-          "label": "t:sections.textImage.settings.image_ratio.options__4.label"
-        }
-      ]
-    },
-    {
-      "id": "column_alignment",
-      "label": "t:sections.textImage.settings.column_alignment.label",
-      "type": "select",
-      "default": "left",
-      "options": [
-        {
-          "value": "left",
-          "label": "t:sections.textImage.settings.column_alignment.options__1.label"
-        },
-        {
-          "value": "center",
-          "label": "t:sections.textImage.settings.column_alignment.options__2.label"
-        }
-      ]
-    },
-    {
-      "id": "background_style",
-      "label": "t:sections.textImage.settings.background_style.label",
-      "type": "select",
-      "default": "primary",
-      "options": [
-        {
-          "value": "none",
-          "label": "t:sections.textImage.settings.background_style.options__1.label"
-        },
-        {
-          "value": "primary",
-          "label": "t:sections.textImage.settings.background_style.options__2.label"
-        },
-        {
-          "value": "secondary",
-          "label": "t:sections.textImage.settings.background_style.options__3.label"
-        }
-      ]
-    },
-    {
-      "id": "button_label",
-      "label": "t:sections.textImage.settings.button_label.label",
-      "type": "text",
-      "default": "Button label"
-    },
-    {
-      "id": "button_link",
-      "label": "t:sections.textImage.settings.button_link.label",
-      "type": "url"
-    },
-    {
-      "type": "checkbox",
-      "id": "swipe_on_mobile",
-      "label": "t:sections.textImage.settings.swipe_on_mobile.label",
-      "default": false
-    }
   ],
   "blocks": [
     {
@@ -157,7 +45,8 @@
         {
           "id": "image",
           "type": "image_picker",
-          "label": "t:sections.textImage.blocks.column.settings.image.label"
+          "label": "Image"
+
         },
         {
           "id": "title",
