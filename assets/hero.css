@@ -7,7 +7,7 @@
   min-height: 88vh;
 }
 
-.hero.right {
+.hero.left {
   flex-direction: row-reverse;
 }
 
