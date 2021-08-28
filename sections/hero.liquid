@@ -21,10 +21,10 @@
 <li>Popular</li>
 
 </ul>
-<div class="hero__left__featured__img" >
+<div style="width: image_size" class="hero__left__featured__img" >
   {%- if block.settings.featureImage != blank -%}
     {%- assign image_size = block.settings.featuredImg_width | append: 'x' -%}
-    <img style="width: image_size" srcset="{{ block.settings.featureImage | img_url: image_size, width: image_size }}"
+    <img srcset="{{ block.settings.featureImage | img_url: image_size, width: image_size }}"
       src="{{ block.settings.featureImage | img_url: image_size }}"
       loading="lazy"
       alt="hero" />
