@@ -9,7 +9,6 @@
 
 
 <header class="headers">
-  {%- if section.settings.menu != blank -%}
   <ul class="header__list">
    
     <div class="header__list__left">
@@ -59,7 +58,7 @@
       </li>
       </div>
   </ul>
-{%- endif %}
+
   <div class="mobile">
     <div> </div>
     <img class="mobile__bars" src="{{ 'menu.svg' | asset_url }}" alt="Bars" />
