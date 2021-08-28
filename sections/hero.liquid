@@ -22,7 +22,14 @@
 
 </ul>
 <div class="hero__left__featured__img" >
+  {%- if block.settings.feature-image != blank -%}
+    <img srcset="{{ block.settings.feature-image |  img_url: '490x'}}" alt="hero" />
+
+    {%- else -%}
+
 <img  src="{{ 'makeup.jpg' | asset_url }}" alt="product" />
+{%- endif -%}
+
 </div>
 </div>
   </div>
@@ -71,7 +78,13 @@
           "id": "image",
           "label": "hero_image"
           
-          }
+          },
+          {
+            "type": "image_picker",
+            "id": "feature-image",
+            "label": "feature-image"
+            
+            }
           
 
 
