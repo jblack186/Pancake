@@ -2,7 +2,8 @@
 
 <noscript>{{ 'hero.css' | asset_url | stylesheet_tag }}</noscript>
 
-
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
 <section class="hero">
   <div class="hero__left">
   <div class="hero__left__emptySpace"> </div>
@@ -30,7 +31,8 @@
   </div>
 </section>
 
-
+{%- endcase -%}
+{%- endfor -%}
 
 
 
