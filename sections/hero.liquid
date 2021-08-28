@@ -27,7 +27,12 @@
 </div>
   </div>
   <div class="hero__right">
+    {%- if block.settings.image_picker != blank -%}
+
+    <img  src={{ block.settings.image_picker | escape }} alt="product" />
+    {%- else -%}
   <img src="{{ 'model.jpg' | asset_url }}" alt="woman posing" />
+   {%- endif -%}
   </div>
 </section>
 
@@ -40,7 +45,7 @@
 {
   
   "name": "Hero options",
-  "max_blocks": 2,
+  "max_blocks": 3,
   "blocks": [
     {
       "name": "Hero",
@@ -60,7 +65,13 @@
           "id": "body",
           "label": "Hero body",
           "default": "We have ingrendients that are of the most premium quality. Created with love and care to provide the finest glow to an oily face."
-        }
+        },
+        {
+          "type": "image_picker",
+          "id": "hero_image",
+          "label": "hero_image"
+          }
+          
 
 
       ]
