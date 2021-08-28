@@ -36,12 +36,24 @@
 
 {% schema %}
 {
-  "name": "Hero",
+  "name": "Hero Image Position",
   "settings": [
     {
     "type": "text",
-    "id": "hero",
-    "label": "Hero"
+    "id": "hero image",
+    "label": "Hero Image Position"
+    "options": [
+      {
+      "value": "Right",
+      "label": "right"
+      },
+      {
+        "value": "Left",
+        "label": "left"
+    
+      }
+    ],
+    "default": "right"
     }
 
   ]
