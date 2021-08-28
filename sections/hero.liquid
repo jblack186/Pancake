@@ -25,6 +25,7 @@
   {%- if block.settings.featureImage != blank -%}
     {%- assign image_size = block.settings.featuredImg_width | append: 'x' -%}
     <img srcset="{{ block.settings.featureImage | img_url: image_size, width: image_size }}"
+      src="{{ block.settings.featureImage | img_url: image_size }}"
       loading="lazy"
       alt="hero" />
 
