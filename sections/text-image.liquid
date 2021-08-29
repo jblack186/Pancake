@@ -20,7 +20,7 @@
     <h4>OUR PHILOSOPHY</h4>
     <p>We're a wellness and beauty brand empowering eople to live a happy and healthy life.</p></div>
     {%- if section.settings.image != blank -%}
-      <img src="{{section.settings.image}}" alt="makeup"/>
+      <img srcset="{{section.settings.image | img: url: '490x'}}" alt="makeup"/>
 
       {% else %}
       <img src="{{ 'makeup1.jpg' | asset_url }}"  alt="collection" />
