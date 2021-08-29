@@ -32,8 +32,8 @@
         "button_text": "SHOP COLLECTION"
       }
     },
-    "16302508741ba58c53": {
-      "type": "text-image",
+    "163025194085f402dd": {
+      "type": "image-text",
       "settings": {
         "heading": "OUR PHILOSOPHY",
         "body": "We're a wellness and beauty brand empowering eople to live a happy and healthy life.",
@@ -46,6 +46,6 @@
   "order": [
     "hero",
     "1630182655bd5a0cfa",
-    "16302508741ba58c53"
+    "163025194085f402dd"
   ]
 }
