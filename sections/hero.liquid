@@ -3,11 +3,11 @@
 <noscript>{{ 'hero.css' | asset_url | stylesheet_tag }}</noscript>
 
 
-{% case section.settings.hero_type %}
-  {% when 'heroOne' %}
 
 {%- for block in section.blocks -%}
-
+  {% case section.settings.hero_type %}
+    {% when 'heroOne' %}
+  
 <section class="hero {{block.settings.position}}">
   <div class="hero__left">
   <div class="hero__left__emptySpace"> </div>
@@ -51,7 +51,7 @@
    {%- endif -%}
   </div>
 </section>
-{% when 'headerTwo' %}
+{% when 'heroTwo' %}
   <section class="hero-three">
     <div class="hero-three__content">
       <h2>BRAND NEW LOOK</h2>
@@ -65,11 +65,11 @@
     </div>
 
   </section>
+{% endcase %}
 
 
 {%- endfor -%}
 
-{% endcase %}
 
 
 {% schema %}
