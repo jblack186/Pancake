@@ -24,26 +24,28 @@
 
       {% else %}
       <img src="{{ 'makeup1.jpg' | asset_url }}"  alt="collection" />
+    {% endif %}}
     </div>
     
   </div>
 </section>
 
-
-
-
 {% schema %}
+
+
+
 {
-  "name": "Text-Image",
+  "name": "Text Image",
   "max_blocks": 1,
   "blocks": [
     {
-      "type": "column",
       "name": "Options",
+      "type": "text",
       "settings": [
+
         {
-          "id": "image",
           "type": "image_picker",
+          "id": "image",
           "label": "Image"
 
         }
