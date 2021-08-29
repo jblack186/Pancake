@@ -215,6 +215,11 @@ display: flex;
 
 }
 
+@media (max-width: 992px) {
+.middle__top__contain__image__banner.mobile {
+  height: max-content;
+}
+}
 
   .middle__top__contain__image__banner.image-text {
     left: 0;
