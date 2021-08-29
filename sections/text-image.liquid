@@ -19,12 +19,12 @@
     <div class="middle__top__contain__image__banner">
     <h4>OUR PHILOSOPHY</h4>
     <p>We're a wellness and beauty brand empowering eople to live a happy and healthy life.</p></div>
-    {%- if block.settings.image != blank -%}
-      <img src="{{block.settings.image}}" alt="makeup"/>
+    {%- if section.settings.image != blank -%}
+      <img src="{{section.settings.image}}" alt="makeup"/>
 
       {% else %}
       <img src="{{ 'makeup1.jpg' | asset_url }}"  alt="collection" />
-    {% endif %}}
+    {% endif %}
     </div>
     
   </div>
@@ -36,11 +36,7 @@
 
 {
   "name": "Text Image",
-  "max_blocks": 1,
-  "blocks": [
-    {
-      "name": "Options",
-      "type": "text",
+
       "settings": [
 
         {
@@ -51,15 +47,8 @@
         }
         
       ]
-    }
-  ],
-  "default": {
-    "blocks": [
-      {
-        "type": "text"
-      }
-    ]
-  }
+    
+  
 
 }
 {% endschema %}
