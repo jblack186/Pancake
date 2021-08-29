@@ -28,6 +28,8 @@
     </div>
     </div>
     <div class="middle__top__contain__image">
+      {%- if section.settings.banner -%}
+
     <div class="middle__top__contain__image__banner image-text">
       {%- if section.settings.heading != blank -%}
 <h4>{{section.settings.heading}}</h4>
@@ -42,11 +44,13 @@
     {%endif%}
 
   </div>
+
   <div class="middle__top__contain__image__banner image-text mobile">
     {%- if section.settings.heading != blank -%}
 <h4>{{section.settings.heading}}</h4>
     {%else%}
   <h4>OUR PHILOSOPHY</h4>
+  {%endif%}
   {%endif%}
 
   {%- if section.settings.body != blank -%}
