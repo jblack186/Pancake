@@ -30,7 +30,7 @@
     <div class="middle__top__contain__image">
       {%- if section.settings.banner -%}
 
-    <div class="middle__top__contain__image__banner image-text">
+    <div class="middle__top__contain__image__banner image-text" {%- if section.settings.banner_position == 'top' -%} bottom='unset', top: 0 {%endif%}>
       {%- if section.settings.heading != blank -%}
 <h4>{{section.settings.heading}}</h4>
       {%else%}
@@ -141,7 +141,7 @@
             }
            
           ],
-          "default": "top"
+          "default": "bottom"
         }
         
         
