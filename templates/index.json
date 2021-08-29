@@ -24,12 +24,28 @@
     "1630182655bd5a0cfa": {
       "type": "text-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/element5-digital-ceWgSMd8rvQ-unsplash.jpg"
+        "image": "shopify:\/\/shop_images\/element5-digital-ceWgSMd8rvQ-unsplash.jpg",
+        "heading": "OUR PHILOSOPHY",
+        "body": "We're a wellness and beauty brand empowering eople to live a happy and healthy life.",
+        "left_heading": "the beauty trend",
+        "left_body": "Treat your skin with a little love, care and makeup.",
+        "button_text": "SHOP COLLECTION"
+      }
+    },
+    "16302508741ba58c53": {
+      "type": "text-image",
+      "settings": {
+        "heading": "OUR PHILOSOPHY",
+        "body": "We're a wellness and beauty brand empowering eople to live a happy and healthy life.",
+        "left_heading": "the beauty trend",
+        "left_body": "Treat your skin with a little love, care and makeup.",
+        "button_text": "SHOP COLLECTION"
       }
     }
   },
   "order": [
     "hero",
-    "1630182655bd5a0cfa"
+    "1630182655bd5a0cfa",
+    "16302508741ba58c53"
   ]
 }
