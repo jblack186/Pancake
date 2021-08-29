@@ -17,7 +17,11 @@
     </div>
     <div class="middle__top__contain__image">
     <div class="middle__top__contain__image__banner">
+      {%- if section.settings.heading != blank -%}
+<h4>{{section.settings.heading}}</h4>
+      {%else%}
     <h4>OUR PHILOSOPHY</h4>
+    {%endif%}
     <p>We're a wellness and beauty brand empowering eople to live a happy and healthy life.</p></div>
     {%- if section.settings.image != blank -%}
       <img srcset="{{section.settings.image | img_url: '490x'}}" alt="makeup"/>
@@ -44,6 +48,13 @@
           "id": "image",
           "label": "Image"
 
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Banner-heading",
+          "default": "OUR PHILOSOPHY"
+  
         }
         
       ]
