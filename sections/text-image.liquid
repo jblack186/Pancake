@@ -22,7 +22,14 @@
       {%else%}
     <h4>OUR PHILOSOPHY</h4>
     {%endif%}
-    <p>We're a wellness and beauty brand empowering eople to live a happy and healthy life.</p></div>
+
+    {%- if section.settings.heading != blank -%}
+<p>{{section.settings.heading}}</p>
+      {%else%}
+    <p>We're a wellness and beauty brand empowering eople to live a happy and healthy life.</p>
+    {%endif%}
+
+  </div>
     {%- if section.settings.image != blank -%}
       <img srcset="{{section.settings.image | img_url: '490x'}}" alt="makeup"/>
 
@@ -52,9 +59,16 @@
         {
           "type": "text",
           "id": "heading",
-          "label": "Banner-heading",
+          "label": "Banner heading",
           "default": "OUR PHILOSOPHY"
   
+        },
+        {
+          "type": "text",
+          "id": "body",
+          "label": "Banner body",
+          "default": "We're a wellness and beauty brand empowering eople to live a happy and healthy life."
+
         }
         
       ]
