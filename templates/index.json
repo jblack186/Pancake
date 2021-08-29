@@ -10,6 +10,9 @@
             "body": "We have ingrendients dffffhat are of the most premium quality. Created with love and care to provide the finest glow to an oily face.",
             "image": "shopify:\/\/shop_images\/amir-seilsepour-VLJV46hPLSM-unsplash_1.jpg",
             "featureImage": "shopify:\/\/shop_images\/element5-digital-ceWgSMd8rvQ-unsplash.jpg",
+            "left-hero_image": "shopify:\/\/shop_images\/amir-seilsepour-VLJV46hPLSM-unsplash_1.jpg",
+            "right-hero_image": "shopify:\/\/shop_images\/bright-eyeshadow-makeup.jpg",
+            "hero_button": "SHOP COLLECTION",
             "featuredImg_width": 180,
             "position": "right"
           }
@@ -19,6 +22,7 @@
         "b7f81788-45bd-4c1b-a185-e136b55d630b"
       ],
       "settings": {
+        "hero_type": "heroTwo"
       }
     },
     "1630253183e5d0ef78": {
