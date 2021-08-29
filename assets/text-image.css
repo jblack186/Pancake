@@ -1,5 +1,7 @@
 .middle {
-  margin-top: 50px;
+  
+ 
+
 }
 
 .middle__top {
@@ -204,9 +206,7 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  justify-content: space-between;
   position: relative;
 }
 
@@ -262,6 +262,7 @@
   font-weight: 250;
   font-size: 3rem;
   margin-bottom: 10px;
+  
 }
 
 @media (max-width: 767px) {
@@ -365,11 +366,11 @@
 .middle__bottom__contain__image__banner h4 {
   margin-top: 0px;
   color: #966060;
-  font-size: .9rem;
-}
+  font-size: 1.1rem;
+  font-weight: bold;}
 
 .middle__bottom__contain__image__banner p {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   width: 70%;
   margin: 0 auto;
   text-align: center;

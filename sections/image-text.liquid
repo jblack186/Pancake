@@ -2,7 +2,8 @@
 
 <noscript>{{ 'text-image.css' | asset_url | stylesheet_tag }}</noscript>
 
-<section class="middle__bottom">
+<section class="middle-bottom">
+  <div class="middle__bottom">
     <div class="middle__bottom__contain__image">
     <div class="middle__bottom__contain__image__banner">
       {%- if section.settings.heading != blank -%}
@@ -26,8 +27,8 @@
     {% endif %}
     </div>
     
-  </div>
-  <div class="middle__bottom">
+  
+ 
     <div class="middle__bottom__contain">
         <div class="middle__bottom__contain__content">
           {%- if section.settings.left_heading != blank -%}
@@ -51,14 +52,14 @@
           {%endif%}
         </div>
         </div>
-    
+      </div>
 </section>
 
 {% schema %}
 {
   "name": "Image Text",
   "tag": "section",
-  "class": "spaced-section",
+  "class": "section",
   "settings": [
 
         {
