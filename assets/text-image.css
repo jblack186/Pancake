@@ -229,6 +229,14 @@ display: flex;
 
   }
   
+  .middle__top__contain__image__banner.image-text.top {
+   
+    top: 0;
+    bottom: unset;
+
+  }
+  
+
 
 @media (min-width: 992px) {
   .middle__top__contain__image__banner.image-text.mobile {
