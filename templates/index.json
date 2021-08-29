@@ -14,7 +14,8 @@
             "right-hero_image": "shopify:\/\/shop_images\/bright-eyeshadow-makeup.jpg",
             "hero_button": "SHOP COLLECTION",
             "featuredImg_width": 180,
-            "position": "right"
+            "position": "right",
+            "hero-two__color": "light"
           }
         }
       },
