@@ -230,7 +230,9 @@ display: flex;
   }
   
   .middle__top__contain__image__banner.image-text.top {
-   
+    left: 0;
+    right: unset;
+
     top: 0;
     bottom: unset;
 
