@@ -45,7 +45,9 @@
         "body": "We're a wellness and beauty brand empowering eople to live a happy and healthy life.",
         "left_heading": "the beauty trend",
         "left_body": "Treat your skin with a little love, care and makeup.",
-        "button_text": "SHOP COLLECTION"
+        "button_text": "SHOP COLLECTION",
+        "banner": true,
+        "banner_position": "bottom"
       }
     }
   },
