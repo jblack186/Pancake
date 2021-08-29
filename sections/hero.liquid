@@ -2,6 +2,10 @@
 
 <noscript>{{ 'hero.css' | asset_url | stylesheet_tag }}</noscript>
 
+
+{% case section.settings.header_type %}
+  {% when 'heroOne' %}
+
 {%- for block in section.blocks -%}
 
 <section class="hero {{block.settings.position}}">
@@ -47,10 +51,25 @@
    {%- endif -%}
   </div>
 </section>
+{% when 'headerTwo' %}
+  <section className="hero-three">
+    <div className="hero-three__content">
+      <h2>BRAND NEW LOOK</h2>
+      <a href="">SHOP COLLECTION</a>
+    </div>
+    <div className="hero-three__left">
+    <img className="hero-three__left__img" src="{{ 'mode3.svg' | asset_url }}" alt="model" />
+    </div>
+    <div className="hero-three__right">
+    <img className="hero-three__right__img" src="{{ 'makeup3.svg' | asset_url }}" alt="model" />
+    </div>
+
+  </section>
 
 
 {%- endfor -%}
 
+{% endcase %}
 
 
 {% schema %}
@@ -58,6 +77,25 @@
   
   "name": "Hero options",
   "max_blocks": 3,
+  "settings": [
+    {
+      "type": "select",
+      "id": "hero_type",
+      "label": "Type Of Hero",
+      "options": [
+        {
+          "value": "heroOne",
+          "label": "Hero 1"
+          },
+          {
+          "value": "heroTwo",
+          "label": "Hero 2"
+          }
+        
+      ]
+    }
+  ],
+
   "blocks": [
     {
       "name": "Hero",
