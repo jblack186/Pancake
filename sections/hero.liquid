@@ -2,6 +2,19 @@
 
 <noscript>{{ 'hero.css' | asset_url | stylesheet_tag }}</noscript>
 
+{%style%}
+.hero-three {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 4;
+  opacity: .3;
+}
+
+{%endstyle%}
 
 
 {%- for block in section.blocks -%}
@@ -52,7 +65,7 @@
   </div>
 </section>
 {% when 'heroTwo' %}
-  <section class="hero-three" opacity=.5>
+  <section class="hero-three">
     <div class="hero-three__content">
       <h2 id="hero-three__content__heading" class="{{block.settings.hero-two__color}}">{{ block.settings.heading | escape }}</h2>
       <a href="">{{ block.settings.hero_button | escape }}</a>

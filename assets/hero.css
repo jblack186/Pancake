@@ -247,6 +247,7 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  z-index: 2;
 }
 
 .hero-three__left {
