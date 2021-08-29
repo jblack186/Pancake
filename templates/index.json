@@ -21,6 +21,12 @@
       "settings": {
       }
     },
+    "1630253183e5d0ef78": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": ""
+      }
+    },
     "1630182655bd5a0cfa": {
       "type": "text-image",
       "settings": {
@@ -45,6 +51,7 @@
   },
   "order": [
     "hero",
+    "1630253183e5d0ef78",
     "1630182655bd5a0cfa",
     "163025194085f402dd"
   ]
