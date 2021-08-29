@@ -3,7 +3,7 @@
 <noscript>{{ 'hero.css' | asset_url | stylesheet_tag }}</noscript>
 
 
-{% case section.settings.header_type %}
+{% case section.settings.hero_type %}
   {% when 'heroOne' %}
 
 {%- for block in section.blocks -%}
