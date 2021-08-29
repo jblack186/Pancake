@@ -23,43 +23,8 @@
     },
     "1630182655bd5a0cfa": {
       "type": "text-image",
-      "blocks": {
-        "1630182655bd5a0cfa-0": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "1630182655bd5a0cfa-1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "1630182655bd5a0cfa-2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1630182655bd5a0cfa-0",
-        "1630182655bd5a0cfa-1",
-        "1630182655bd5a0cfa-2"
-      ],
       "settings": {
-        "title": "textImage",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "swipe_on_mobile": false
+        "image": "shopify:\/\/shop_images\/element5-digital-ceWgSMd8rvQ-unsplash.jpg"
       }
     }
   },
