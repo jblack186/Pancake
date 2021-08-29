@@ -58,10 +58,22 @@
       <a href="">{{ block.settings.hero_button | escape }}</a>
     </div>
     <div class="hero-three__left">
-    <img class="hero-three__left__img" src="{{ 'mode3.svg' | asset_url }}" alt="model" />
+      {%- if block.settings.left-hero_image != blank -%}
+        <img class="hero-three__left__img" srcset="{{ block.settings.left-hero_image |  img_url: '490x'}}" alt="hero" />
+
+      {%- else -%}
+
+    <img class="hero-three__left__img" src="{{ 'mode3.jpg' | asset_url }}" alt="model" />
+  {%- endif -%}
+
     </div>
     <div class="hero-three__right">
-    <img class="hero-three__right__img" src="{{ 'makeup3.svg' | asset_url }}" alt="model" />
+      {%- if block.settings.right-hero_image != blank -%}
+        <img class="hero-three__right__img" srcset="{{ block.settings.right-hero_image |  img_url: '490x'}}" alt="hero" />
+
+        {%else%}
+    <img class="hero-three__right__img" src="{{ 'makeup3.jpg' | asset_url }}" alt="model" />
+    {%endif%}
     </div>
 
   </section>
@@ -129,10 +141,23 @@
             
             },
             {
+              "type": "image_picker",
+              "id": "left-hero_image",
+              "label": "Left hero image"
+              
+              },
+              {
+                "type": "image_picker",
+                "id": "right-hero_image",
+                "label": "Right hero image"
+                
+                },
+      
+            {
               "type": "text",
               "id": "hero_button",
               "label": "Hero Button Text",
-              "default": "BRAND NEW LOOK"
+              "default": "SHOP COLLECTION"
               
               },
               {
