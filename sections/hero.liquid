@@ -54,7 +54,7 @@
 {% when 'heroTwo' %}
   <section class="hero-three">
     <div class="hero-three__content">
-      <h2>{{ block.settings.heading | escape }}</h2>
+      <h2 id="hero-three__content__heading" class="{{block.settings.hero-two__color}}}">{{ block.settings.heading | escape }}</h2>
       <a href="">{{ block.settings.hero_button | escape }}</a>
     </div>
     <div class="hero-three__left">
@@ -188,7 +188,26 @@
   
               ]
               
-              }
+              },
+              {
+                "type": "select",
+                "id": "hero-two__color",
+                "label": "Hero 2 Text Color",
+                "default": "dark",
+                "options": [
+                  {
+                    "value": "dark",
+                    "label": "dark"
+                  },
+                    {
+                      "value": "light",
+                      "label": "Light"
+                    }
+    
+                ]
+                
+                }
+  
           
 
 

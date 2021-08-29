@@ -293,4 +293,12 @@
   cursor: pointer;
 }
 
+#hero-three__content__heading.dark {
+  color: black;
+}
+
+#hero-three__content__heading.light {
+  color: white;
+}
+
 /*# sourceMappingURL=Hero.css.map */
