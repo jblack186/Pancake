@@ -35,8 +35,7 @@
 {% schema %}
 {
   "name": "Text-Image",
-  "settings": [
-  ],
+  "max_blocks": 1,
   "blocks": [
     {
       "type": "column",
@@ -51,6 +50,14 @@
         
       ]
     }
-  ]
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "text"
+      }
+    ]
+  }
+
 }
 {% endschema %}
