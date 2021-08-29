@@ -6,13 +6,25 @@
   <div class="middle__top">
 <div class="middle__top__contain">
     <div class="middle__top__contain__content">
+      {%- if section.settings.left_heading != blank -%}
+        <h3>{{section.settings.left_heading}}</h3>
+        {%else%}
       <h3 class="middle__top__contain__content__heading">the beauty trend</h3>
+      {%endif%}
       <div class="middle__top__contain__content__body">
         <div class="line"> </div>
+        {%- if section.settings.left_body != blank -%}
+<p>{{section.settings.left_body}}</p>
+          {%else%}
       <p>Treat your skin with a little love, care and makeup.</p>
-      
+      {%endif%}
       </div>
+      {%- if section.settings.button_text != blank -%}
+
+        <button class="middle__top__contain__content__button">{{section.settings.button_text}}</button>
+        {%else%}
       <button class="middle__top__contain__content__button">SHOP COLLECTION</button>
+      {%endif%}
     </div>
     </div>
     <div class="middle__top__contain__image">
@@ -69,7 +81,26 @@
           "label": "Banner body",
           "default": "We're a wellness and beauty brand empowering eople to live a happy and healthy life."
 
+        },
+        {
+          "type": "text",
+          "id": "left_heading",
+          "label": "Left heading",
+          "default": "the beauty trend"
+        },
+        {
+          "type": "text",
+          "id": "left_body",
+          "label": "Left heading",
+          "default": "the beauty trend"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "SHOP COLLECTION"
         }
+        
         
       ]
     
