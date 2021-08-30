@@ -1,14 +1,23 @@
 <link rel="stylesheet" href="{{ 'header.css' | asset_url }}" media="print" onload="this.media='all'">
 
 <noscript>{{ 'header.css' | asset_url | stylesheet_tag }}</noscript>
+{%style%}
+{%- if section.settings.positions -%}
+#header-first.headers {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+{%endif%}
 
+{%endstyle%}
 
 {% case section.settings.header_type %}
   {% when 'headerOne' %}
 
 
 
-<header class="headers">
+<header id="header-first" class="headers">
   <ul class="header__list">
     <div class="header__list__left">
      
@@ -107,7 +116,7 @@
 {% schema %}
 {
   "name": "t:sections.header.name",
-  
+
   "settings": [
   {
   "type": "select",
@@ -124,6 +133,12 @@
   }
   ],
   "default": "headerOne"
+  },
+  {
+    "type": "checkbox",
+    "id": "positions",
+    "label": "Sticky header",
+    "default": false
   },
   {
   "type": "image_picker",
