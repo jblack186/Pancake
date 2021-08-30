@@ -55,12 +55,30 @@
         "banner": true,
         "banner_position": "bottom"
       }
+    },
+    "1630357071491faa12": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": ""
+      }
+    },
+    "16303570647fea5397": {
+      "type": "two-text",
+      "settings": {
+        "heading": "OUR PHILOSOPHY",
+        "body": "We're a wellness and beauty brand empowering eople to live a happy and healthy life.",
+        "left_heading": "the beauty trend",
+        "left_body": "Treat your skin with a little love, care and makeup.",
+        "button_text": "SHOP COLLECTION"
+      }
     }
   },
   "order": [
     "hero",
     "1630253183e5d0ef78",
     "1630182655bd5a0cfa",
-    "163025194085f402dd"
+    "163025194085f402dd",
+    "1630357071491faa12",
+    "16303570647fea5397"
   ]
 }
