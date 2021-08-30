@@ -3,20 +3,11 @@
 <noscript>{{ 'header.css' | asset_url | stylesheet_tag }}</noscript>
 {%style%}
 {%- if section.settings.positions -%}
-  .headers {
-    width: 100%;
-    height: 60px;
-    position: sticky;
-    top: 0px;
-    z-index: 9;
-    align-self: flex-start;
-
-  }
 #header-first.headers {
-  position: sticky;
+  position: sticky!important;
   height: 60px;
   width: 100%;
-  top: 0px;
+  top: 0px!important;
   left: 0px;
   background: white;
   z-index: 9;
@@ -32,7 +23,7 @@
 
 
 
-<header id="header-first" class="headers">
+<header class="{%- if section.settings.positions -%} headers-sticky {%else%} headers {%endif%}">
   <ul class="header__list">
     <div class="header__list__left">
      

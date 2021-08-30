@@ -14,13 +14,27 @@
 .headers {
   width: 100%;
   height: 60px;
-  position: relative;
+
   display: flex;
   align-items: center;
   background: white;
  
 
 }
+
+.headers-sticky {
+  position: sticky!important;
+  height: 60px;
+  width: 100%;
+  top: 0px!important;
+  left: 0px;
+  background: white;
+  z-index: 9;
+  align-self: flex-start;
+ 
+
+}
+
 
 
 /* @media (max-width: 767px) {
