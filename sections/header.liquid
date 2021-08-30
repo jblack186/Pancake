@@ -3,10 +3,12 @@
 <noscript>{{ 'header.css' | asset_url | stylesheet_tag }}</noscript>
 {%style%}
 {%- if section.settings.positions -%}
-#header-first.headers {
-  position: fixed;
-  top: 0;
+#header-first {
+  position: sticky;
+  top: 70px;
   left: 0;
+  background: white;
+
 }
 {%endif%}
 
@@ -138,7 +140,7 @@
     "type": "checkbox",
     "id": "positions",
     "label": "Sticky header",
-    "default": false
+    "default": true
   },
   {
   "type": "image_picker",

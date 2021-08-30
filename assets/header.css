@@ -5,6 +5,8 @@
   align-items: center;
 }
 
+
+
 @media (max-width: 767px) {
   .header {
     display: -webkit-box;
@@ -48,6 +50,12 @@
   }
 }
 
+.header__list .header__list__left a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
 .header__list__left {
   width: 30%;
   list-style: none;
@@ -57,6 +65,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+         
 }
 
 .header__list__mid {
