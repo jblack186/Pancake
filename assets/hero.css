@@ -277,6 +277,7 @@
   margin-top: -100px;
   margin-left: -25%;
   text-align: center;
+  z-index: 5;
 }
 
 .hero-three__content h2 {
