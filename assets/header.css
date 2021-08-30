@@ -23,15 +23,15 @@
 }
 
 .headers-sticky {
-  position: sticky!important;
-  height: 60px;
+  position: fixed!important;
+  height: 70px;
   width: 100%;
   top: 0px!important;
   left: 0px;
   background: white;
   z-index: 9;
-  align-self: flex-start;
- 
+  align-items: center;
+
 
 }
 
