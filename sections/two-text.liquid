@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="{{ 'featured-boxes.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'featured-boxes.css' | asset_url | stylesheet_tag }}</noscript>
+
+<section class="two-text">
+  <div class="two-text__text">
+    <div class="two-text__text__content">
+  <h3>Increase Your Beauty</h3>
+    <p>Capture your ture self. Our products are of the utmost quality. Shop here.</p>
+    </div>
+  </div>
+  <div class="two-text__img">
+    <img src="" alt="item" />
+    </div>
+    <div class="two-text__text">
+      <div class="two-text__text__content">
+    <h3>Increase Your Beauty</h3>
+    <p>Capture your ture self. Our products are of the utmost quality. Shop here.</p>
+    </div>
+    </div>
+</section>
+
+{% schema %}
+
+
+
+{
+  "name": "Two Text / One Image",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Banner heading",
+          "default": "OUR PHILOSOPHY"
+  
+        },
+        {
+          "type": "text",
+          "id": "body",
+          "label": "Banner body",
+          "default": "We're a wellness and beauty brand empowering eople to live a happy and healthy life."
+
+        },
+        {
+          "type": "text",
+          "id": "left_heading",
+          "label": "Left heading",
+          "default": "the beauty trend"
+        },
+        {
+          "type": "text",
+          "id": "left_body",
+          "label": "Left body",
+          "default": "Treat your skin with a little love, care and makeup."
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "SHOP COLLECTION"
+        }
+        
+        
+      ],
+      "presets": [
+        {
+          "name": "Two Text",
+          "category": "Image"
+        }
+      ]
+    
+  
+
+}
+{% endschema %}
