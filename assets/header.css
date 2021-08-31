@@ -46,7 +46,8 @@
 }
 
 .header__list__left__item a {
-  list-syle: none;
+  list-style: none;
+  color: unset;
 }
 
 
