@@ -22,6 +22,7 @@
 }
 
 .headers-sticky {
+  display: flex;
   position: fixed!important;
   width: 100%;
   top: 0px!important;
