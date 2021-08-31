@@ -6,6 +6,7 @@
         "settings": {
           "header_type": "headerTwo",
           "positions": false,
+          "height": 73,
           "logo": "shopify:\/\/shop_images\/jupyter.png",
           "logo_width": 70,
           "menu": "main-jamies-menu",
