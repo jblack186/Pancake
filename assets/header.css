@@ -45,6 +45,10 @@
   list-style: none;
 }
 
+.header__list__left__item a {
+  list-syle: none;
+}
+
 
 @media (max-width: 767px) {
   .header {
