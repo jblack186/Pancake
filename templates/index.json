@@ -23,7 +23,7 @@
         "b7f81788-45bd-4c1b-a185-e136b55d630b"
       ],
       "settings": {
-        "opacity": 6,
+        "opacity": 7,
         "hero_type": "heroTwo"
       }
     },
@@ -36,9 +36,10 @@
     "163025194085f402dd": {
       "type": "image-text",
       "settings": {
-        "heading": "OUR PHILOSOPHY",
+        "image": "shopify:\/\/shop_images\/bright-eyeshadow-makeup.jpg",
+        "heading": "We are going",
         "body": "We're a wellnvbess and beauty brand empowering eople to live a happy and healthy life.",
-        "left_heading": "the beauty trend",
+        "left_heading": "the beauty yep",
         "left_body": "Treat your skin with a little love, care and makeup.",
         "button_text": "SHOP COLLECTION",
         "banner": true,
@@ -80,6 +81,17 @@
         "i-mid_body": "Capture your ture self. Our products are of the utmost quality. Shop here.",
         "i-featured_collection": "lotion"
       }
+    },
+    "163038804204650970": {
+      "type": "two-text",
+      "settings": {
+        "two-left_heading": "Increase Your Beauty",
+        "two-left_body": "Capture your ture self. Our products are of the utmost quality. Shop here.",
+        "right_heading": "Increase Your Beauty",
+        "right_body": "Capture your ture self. Our products are of the utmost quality. Shop here.",
+        "featured_collection": "lotion",
+        "button_text": "SHOP COLLECTION"
+      }
     }
   },
   "order": [
@@ -89,6 +101,7 @@
     "1630182655bd5a0cfa",
     "1630357071491faa12",
     "16303570647fea5397",
-    "1630376995bfc9b0f9"
+    "1630376995bfc9b0f9",
+    "163038804204650970"
   ]
 }
