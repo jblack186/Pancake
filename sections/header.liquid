@@ -21,6 +21,10 @@
 
 }
 
+.hero-three__content h2 {
+  font-size: {{section.settings.font_size}}}
+}
+
 .headers-sticky {
   height: {{section.settings.height}}px;
 
@@ -197,6 +201,15 @@
       ]
     },
 
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Font size",
+      "min": 10,
+      "max": 70,
+      "step": 1,
+      "default": 28
+    },
   {
   "type": "image_picker",
   "id": "logo",
