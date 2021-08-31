@@ -5,7 +5,7 @@
 
 <section class="two-text">
   <div class="two-text__img overlay">
-    {%- for product in section.settings.featured_collection.products limit:1 -%}
+    {%- for product in section.settings.i-featured_collection.products limit:1 -%}
       <h3 class="two-text__img__heading overlay">{{product.title}}</h3>
     <img src="{{product.featured_image.src | img_url: '240x'}}" alt="item" />
     {%else%}
@@ -15,12 +15,12 @@
     </div>
     <div class="two-text__text">
       <div class="two-text__text__content">
-        <h3>{{section.settings.right_heading}}</h3>
-        <p>{{section.settings.right_body}}</p>
+        <h3>{{section.settings.i-middle_heading}}</h3>
+        <p>{{section.settings.i-middle_body}}</p>
         </div>
     </div>
     <div class="two-text__img overlay">
-      {%- for product in section.settings.featured_collection.products limit:1 -%}
+      {%- for product in section.settings.i-featured_collection.products limit:1 -%}
         <h3 class="two-text__img__heading overlay">{{product.title}}</h3>
       <img src="{{product.featured_image.src | img_url: '240x'}}" alt="item" />
       {%else%}
@@ -40,54 +40,27 @@
   "tag": "section",
   "class": "section",
   "settings": [
-        {
-          "type": "image_picker",
-          "id": "i-image",
-          "label": "Image"
-
-        },
+      
         
         {
           "type": "text",
-          "id": "i-left_heading",
-          "label": "Left heading",
+          "id": "i-mid_heading",
+          "label": "Middle heading",
           "default": "Increase Your Beauty"
   
         },
         {
           "type": "text",
-          "id": "i-left_body",
-          "label": "Left body",
-          "default": "Capture your ture self. Our products are of the utmost quality. Shop here."
-
-        },
-        {
-          "type": "text",
-          "id": "i-right_heading",
-          "label": "Right heading",
-          "default": "Increase Your Beauty"
-  
-        },
-        {
-          "type": "text",
-          "id": "i-right_body",
-          "label": "Right body",
+          "id": "i-mid_body",
+          "label": "Middle body",
           "default": "Capture your ture self. Our products are of the utmost quality. Shop here."
 
         },
 
         {
           "type": "collection",
-          "id": "featured_collection",
+          "id": "i-featured_collection",
           "label": "Featured Collection"
-        },
-        
-        
-        {
-          "type": "text",
-          "id": "button_text",
-          "label": "Button text",
-          "default": "SHOP COLLECTION"
         }
         
         
