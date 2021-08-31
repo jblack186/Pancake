@@ -65,6 +65,7 @@
   max-height: 300px;
   -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
           box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+         
 }
 
 @media (max-width: 992px) {
@@ -76,13 +77,14 @@
     max-height: unset;
     -webkit-box-shadow: none;
             box-shadow: none;
+          
   }
 }
 
 .two-text__text {
   width: 33.34%;
   background: #966060;
-  color: white;
+  
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,12 +109,18 @@
 
 .two-text__text__content {
   width: 90%;
+  color: white;
+}
+
+.two-text__text__content h3 {
+  color: white;
 }
 
 .two-text__img {
   width: 33.34%;
   position: relative;
   cursor: pointer;
+ 
 }
 
 @media (max-width: 992px) {
@@ -129,8 +137,25 @@
   z-index: 2;
 }
 
-.two-text :hover::before {
-  content: 'Avya Signature';
+
+.two-text__img:hover {
+  color: white;
+}
+.two-text__img h3 {
+  width: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -10%;
+  margin-top: -17px;
+  color: transparent;
+  font-size: 25px;
+}
+
+
+
+.two-text__img:hover::before {
+  content: '';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,9 +171,15 @@
   top: 0;
   left: 0;
   background: black;
-  color: white;
   font-size: 2rem;
   z-index: 3;
   opacity: .7;
+  color: white;
 }
+.two-text__img:hover h3{
+  color: white;
+  z-index: 5;
+  background: none;
+}
+
 /*# sourceMappingURL=Featured.css.map */
