@@ -41,6 +41,13 @@
   fill: white
 }
 
+a.header-color1 {
+  background: #966060;
+  color: white;
+  fill: white
+}
+
+
 .header-color2 {
   background: #f5b6a7;
   color: black;
@@ -48,6 +55,12 @@
   list-style: none;
 }
 
+a.header-color2 {
+  background: #f5b6a7;
+  color: black;
+  fill: black;
+  list-style: none;
+}
 
 
 
