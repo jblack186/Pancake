@@ -14,8 +14,13 @@
   align-self: flex-start;
 
 }
-{%endif%}
 
+
+{%endif%}
+.headers {
+ height: {{section.settings.height}}px;
+
+}
 {%endstyle%}
 
 {% case section.settings.header_type %}
@@ -80,8 +85,19 @@
       <div class="headers">
         <ul class="header__list">
         <div class="header__list__mid">
-              <h1 class="header__list__mid__logo">honest</h1>
-          </div>
+          <a class="header__list__mid__logo">
+            {%- if section.settings.logo != blank -%}
+              {%- assign image_size = section.settings.logo_width | append: 'x' -%}
+              <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+                src="{{ section.settings.logo | img_url: image_size }}"
+                loading="lazy"
+                class="header__heading-logo"
+                alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
+            {%- else -%}
+              <span class="h2">{{ shop.name }}</span>
+            {%- endif -%}
+          </a>
+            </div>
           <div class="header__list__left">
      
             {%- if link.links == blank -%}
@@ -146,6 +162,16 @@
     "label": "Sticky header",
     "default": false
   },
+  {
+    "type": "range",
+    "id": "opacity",
+    "min": 60,
+    "max": 120,
+    "step": 1,
+    "default": 70,
+    "label": "Height"
+    },
+
   {
   "type": "image_picker",
   "id": "logo",
