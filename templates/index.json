@@ -24,7 +24,7 @@
       ],
       "settings": {
         "hero_type": "heroTwo",
-        "opacity": 2,
+        "opacity": 5,
         "font_size": 48,
         "text_position": 47
       }
