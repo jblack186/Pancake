@@ -23,7 +23,6 @@
 
 .headers-sticky {
   position: fixed!important;
-  height: 70px;
   width: 100%;
   top: 0px!important;
   left: 0px;
