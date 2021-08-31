@@ -9,7 +9,6 @@
   width: 100%;
   top: 0px!important;
   left: 0px;
-  background: white;
   z-index: 9;
   align-self: flex-start;
 
@@ -33,7 +32,7 @@
 
 
 
-<header class="{%- if section.settings.positions -%} headers-sticky {%else%} headers {%endif%}">
+<header class="{%- if section.settings.positions -%} headers-sticky {%else%} headers {%endif%} {{section.settings.header_colors}}">
   <ul class="header__list">
     <div class="header__list__left">
      
@@ -175,6 +174,27 @@
     "step": 1,
     "default": 70,
     "label": "Height"
+    },
+    {
+      "type": "select",
+      "id": "header_colors",
+      "label": "Header color",
+      "default": "header-color1",
+      "options": [
+        {
+          "value": "header-color1",
+          "label": "Header color 1"
+        },
+        {
+          "value": "header-color2",
+          "label": "Header color 2"
+        },
+        {
+          "value": "header-color3",
+          "label": "Header color 3"
+        }
+
+      ]
     },
 
   {

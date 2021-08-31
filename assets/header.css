@@ -16,7 +16,6 @@
 
   display: flex;
   align-items: center;
-  background: white;
  
 
 }
@@ -27,13 +26,21 @@
   width: 100%;
   top: 0px!important;
   left: 0px;
-  background: white;
   z-index: 9;
   align-items: center;
 
 
 }
 
+.header-color1 {
+  background: yellow;
+  color: pink;
+}
+
+.header-color2 {
+  background: blue;
+  color: white;
+}
 
 
 @media (max-width: 767px) {
