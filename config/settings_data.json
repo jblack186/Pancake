@@ -4,7 +4,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "header_type": "headerTwo",
+          "header_type": "headerOne",
           "positions": true,
           "height": 105,
           "header_colors": "header-color1",

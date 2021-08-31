@@ -23,8 +23,10 @@
         "b7f81788-45bd-4c1b-a185-e136b55d630b"
       ],
       "settings": {
-        "opacity": 7,
-        "hero_type": "heroTwo"
+        "hero_type": "heroTwo",
+        "opacity": 5,
+        "font_size": 48,
+        "text_position": 47
       }
     },
     "1630253183e5d0ef78": {
