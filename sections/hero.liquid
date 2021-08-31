@@ -16,6 +16,19 @@
   
 }
 
+.hero-three__content {
+  position: absolute;
+  width: 50%;
+  height: 200px;
+  top: {{section.settings.text_position}}%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -25%;
+  text-align: center;
+  z-index: 6;
+}
+
+
 .hero-three__content h2 {
   font-weight: 250;
   color: white;
@@ -114,15 +127,6 @@
   "max_blocks": 3,
   "settings": [
     {
-      "type": "range",
-      "id": "opacity",
-      "min": 0,
-      "max": 9,
-      "step": 1,
-      "default": 0,
-      "label": "Opacity"
-      },
-    {
       "type": "select",
       "id": "hero_type",
       "label": "Type Of Hero",
@@ -141,13 +145,33 @@
     },
     {
       "type": "range",
+      "id": "opacity",
+      "min": 0,
+      "max": 9,
+      "step": 1,
+      "default": 0,
+      "label": "Opacity"
+      },
+
+    {
+      "type": "range",
       "id": "font_size",
       "label": "Heading 2 font size",
       "min": 10,
       "max": 70,
       "step": 1,
       "default": 48
+    },
+    {
+      "type": "range",
+      "id": "text_position",
+      "label": "Heading 2 text position",
+      "min": 20,
+      "max": 70,
+      "step": 1,
+      "default": 40
     }
+
   ],
 
   "blocks": [
