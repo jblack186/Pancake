@@ -40,7 +40,7 @@
         {%- for link in section.settings.menu.links -%}
           {%- if section.settings.menu != blank -%}
       <li class="header__list__left__item">
-        <a href="{{ link.url }}">{{ link.title | escape }}</a>
+        <a href="{{ link.url }} {{section.settings.header_colors}}">{{ link.title | escape }}</a>
       </li>
     {%- endif -%}
   {%- endfor -%}

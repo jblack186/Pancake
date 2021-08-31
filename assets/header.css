@@ -35,11 +35,13 @@
 .header-color1 {
   background: yellow;
   color: pink;
+  fill: pink
 }
 
 .header-color2 {
   background: blue;
   color: white;
+  fill: white;
 }
 
 
