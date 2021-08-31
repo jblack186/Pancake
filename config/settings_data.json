@@ -4,9 +4,10 @@
       "header": {
         "type": "header",
         "settings": {
-          "header_type": "headerOne",
+          "header_type": "headerTwo",
           "positions": true,
-          "height": 73,
+          "height": 105,
+          "header_colors": "header-color1",
           "logo": "shopify:\/\/shop_images\/jupyter.png",
           "logo_width": 70,
           "menu": "main-jamies-menu",
