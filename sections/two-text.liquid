@@ -10,7 +10,7 @@
     </div>
   </div>
   <div class="two-text__img">
-    {% for product in collection.products %}
+    {% for product in collections.products %}
       <p>hi</p>
       <p>hi</p>
       <h2>{{product.title}}</h2>
@@ -49,6 +49,11 @@
           "label": "Banner heading",
           "default": "OUR PHILOSOPHY"
   
+        },
+        {
+          "type": "collection",
+          "id": "featured_collection",
+          "label": "Featured Collection"
         },
         {
           "type": "text",
