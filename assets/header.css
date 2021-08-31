@@ -31,7 +31,10 @@
 
 
 }
-
+.header__list__left__item a {
+  list-style: none;
+  color: unset;
+}
 .header-color1 {
   background: #966060;
   color: white;
@@ -45,10 +48,7 @@
   list-style: none;
 }
 
-.header__list__left__item a {
-  list-style: none;
-  color: unset;
-}
+
 
 
 @media (max-width: 767px) {
