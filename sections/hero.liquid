@@ -20,7 +20,7 @@
   font-weight: 250;
   color: white;
   opacity: 1;
-  font-size: {{section.settings.font_size}}}px;
+  font-size: {{section.settings.font_size}}px;
 
 }
 
@@ -138,6 +138,15 @@
           }
         
       ]
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Heading 2 font size",
+      "min": 10,
+      "max": 70,
+      "step": 1,
+      "default": 48
     }
   ],
 
@@ -162,15 +171,7 @@
           "label": "Hero 1 body",
           "default": "We have ingrendients that are of the most premium quality. Created with love and care to provide the finest glow to an oily face."
         },
-        {
-          "type": "range",
-          "id": "font_size",
-          "label": "Heading 2 font size",
-          "min": 10,
-          "max": 70,
-          "step": 1,
-          "default": 28
-        },
+        
         {
           "type": "image_picker",
           "id": "image",
