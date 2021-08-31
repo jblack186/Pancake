@@ -1,0 +1,105 @@
+<link rel="stylesheet" href="{{ 'featured-boxes.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'featured-boxes.css' | asset_url | stylesheet_tag }}</noscript>
+
+
+<section class="two-text">
+  <div class="two-text__img overlay">
+    {%- for product in section.settings.featured_collection.products limit:1 -%}
+      <h3 class="two-text__img__heading overlay">{{product.title}}</h3>
+    <img src="{{product.featured_image.src | img_url: '240x'}}" alt="item" />
+    {%else%}
+    <p>No collection</p>
+  {% endfor %}
+
+    </div>
+    <div class="two-text__text">
+      <div class="two-text__text__content">
+        <h3>{{section.settings.right_heading}}</h3>
+        <p>{{section.settings.right_body}}</p>
+        </div>
+    </div>
+    <div class="two-text__img overlay">
+      {%- for product in section.settings.featured_collection.products limit:1 -%}
+        <h3 class="two-text__img__heading overlay">{{product.title}}</h3>
+      <img src="{{product.featured_image.src | img_url: '240x'}}" alt="item" />
+      {%else%}
+      <p>No collection</p>
+    {% endfor %}
+  
+      </div>
+  
+</section>
+
+{% schema %}
+
+
+
+{
+  "name": "Two Images / One Text",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+        {
+          "type": "image_picker",
+          "id": "i-image",
+          "label": "Image"
+
+        },
+        
+        {
+          "type": "text",
+          "id": "i-left_heading",
+          "label": "Left heading",
+          "default": "Increase Your Beauty"
+  
+        },
+        {
+          "type": "text",
+          "id": "i-left_body",
+          "label": "Left body",
+          "default": "Capture your ture self. Our products are of the utmost quality. Shop here."
+
+        },
+        {
+          "type": "text",
+          "id": "i-right_heading",
+          "label": "Right heading",
+          "default": "Increase Your Beauty"
+  
+        },
+        {
+          "type": "text",
+          "id": "i-right_body",
+          "label": "Right body",
+          "default": "Capture your ture self. Our products are of the utmost quality. Shop here."
+
+        },
+
+        {
+          "type": "collection",
+          "id": "featured_collection",
+          "label": "Featured Collection"
+        },
+        
+        
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "SHOP COLLECTION"
+        }
+        
+        
+      ],
+      "presets": [
+        {
+          "name": "Two Text / One Image",
+          "category": "Image"
+        }
+      ]
+    
+  
+
+}
+{% endschema %}
