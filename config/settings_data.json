@@ -4,8 +4,8 @@
       "header": {
         "type": "header",
         "settings": {
-          "header_type": "headerTwo",
-          "positions": false,
+          "header_type": "headerOne",
+          "positions": true,
           "height": 73,
           "logo": "shopify:\/\/shop_images\/jupyter.png",
           "logo_width": 70,

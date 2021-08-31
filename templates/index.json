@@ -23,25 +23,14 @@
         "b7f81788-45bd-4c1b-a185-e136b55d630b"
       ],
       "settings": {
-        "opacity": 3,
-        "hero_type": "heroOne"
+        "opacity": 6,
+        "hero_type": "heroTwo"
       }
     },
     "1630253183e5d0ef78": {
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": ""
-      }
-    },
-    "1630182655bd5a0cfa": {
-      "type": "text-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/element5-digital-ceWgSMd8rvQ-unsplash.jpg",
-        "heading": "OUR PHILOSOPHY",
-        "body": "We're a wellness and beauty brand empowering eople to live a happy and healthy life.",
-        "left_heading": "the beauty trend",
-        "left_body": "Treat your skin with a little love, care and makeup.",
-        "button_text": "SHOP COLLECTION"
       }
     },
     "163025194085f402dd": {
@@ -54,6 +43,17 @@
         "button_text": "SHOP COLLECTION",
         "banner": true,
         "banner_position": "bottom"
+      }
+    },
+    "1630182655bd5a0cfa": {
+      "type": "text-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/element5-digital-ceWgSMd8rvQ-unsplash.jpg",
+        "heading": "OUR PHILOSOPHY",
+        "body": "We're a wellness and beauty brand empowering eople to live a happy and healthy life.",
+        "left_heading": "the beauty trend",
+        "left_body": "Treat your skin with a little love, care and makeup.",
+        "button_text": "SHOP COLLECTION"
       }
     },
     "1630357071491faa12": {
@@ -85,8 +85,8 @@
   "order": [
     "hero",
     "1630253183e5d0ef78",
-    "1630182655bd5a0cfa",
     "163025194085f402dd",
+    "1630182655bd5a0cfa",
     "1630357071491faa12",
     "16303570647fea5397",
     "1630376995bfc9b0f9"
