@@ -33,15 +33,15 @@
 }
 
 .header-color1 {
-  background: yellow;
-  color: pink;
-  fill: pink
+  background: #966060;
+  color: white;
+  fill: white
 }
 
 .header-color2 {
-  background: blue;
-  color: white;
-  fill: white;
+  background: #f5b6a7;
+  color: black;
+  fill: black;
 }
 
 
