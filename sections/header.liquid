@@ -86,7 +86,7 @@
 
 
     {% when 'headerTwo' %}
-      <div class="headers">
+      <div class="headers {{section.settings.header_colors}}">
         <ul class="header__list">
         <div class="header__list__mid">
           <a class="header__list__mid__logo">
@@ -107,7 +107,7 @@
             {%- if link.links == blank -%}
               {%- for link in section.settings.menu.links -%}
                 {%- if section.settings.menu != blank -%}
-            <li class="header__list__left__item">
+            <li class="header__list__left__item  {{section.settings.header_colors}}">
               <a href="{{ link.url }}">{{ link.title | escape }}</a>
             </li>
           {%- endif -%}
