@@ -16,6 +16,7 @@
 
 
 {%endif%}
+
 .headers-sticky {
   display: flex;
   position: fixed!important;
@@ -30,14 +31,15 @@
 }
 
 
+.headers {
+ height: {{section.settings.height}}px;
+
+}
+
 .hero-three__content h2 {
   font-size: {{section.settings.font_size}}}px;
 }
 
-.headers-sticky {
-  height: {{section.settings.height}}px;
-
-}
 {%endstyle%}
 
 {% case section.settings.header_type %}
