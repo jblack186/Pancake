@@ -5,7 +5,7 @@
 <section class="middle">
   <div class="middle__top image-text">
 <div class="middle__top__contain">
-    <div class="middle__top__contain__content">
+    <div class="middle__top__contain__content" style="align-items: {{section.settings.align__text}}">
       {%- if section.settings.left_heading != blank -%}
         <h3>{{section.settings.left_heading}}</h3>
         {%else%}
@@ -84,6 +84,29 @@
           "id": "image",
           "label": "Image"
 
+        },
+        {
+          "type": "select",
+          "id": "align__text",
+          "label": "Text align",
+          "default": "flex-start",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "left"
+            },
+            {
+              "value": "center",
+              "label": "middle"
+            },
+            {
+              "value": "flex-end",
+              "label": "right"
+            }
+
+
+          ]
+  
         },
         {
           "type": "text",
