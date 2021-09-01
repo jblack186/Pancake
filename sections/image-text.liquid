@@ -12,7 +12,7 @@
       <h3 class="middle__top__contain__content__heading">the beauty trend</h3>
       {%endif%}
       <div class="middle__top__contain__content__body">
-        {%- if section.settings.line-%} <div class="line"> </div>{%endif%}
+        {%- if section.settings.line == false -%} <div class="line"> </div>{%endif%}
         {%- if section.settings.left_body != blank -%}
 <p>{{section.settings.left_body}}</p>
           {%else%}
