@@ -4,7 +4,7 @@
 
 
 <section class="two-text">
-  <div class="two-text__text">
+  <div class="two-text__text" style="background-color: {{section.settings.two-box_color}}">
     <div class="two-text__text__content">
   <h3>{{section.settings.two-left_heading}}</h3>
     <p>{{section.settings.two-left_body}}</p>
@@ -19,7 +19,7 @@
   {% endfor %}
 
     </div>
-    <div class="two-text__text">
+    <div class="two-text__text"  style="background-color: {{section.settings.two-box_color}}">
       <div class="two-text__text__content">
         <h3>{{section.settings.right_heading}}</h3>
         <p>{{section.settings.right_body}}</p>
@@ -84,6 +84,13 @@
           "id": "button_text",
           "label": "Button text",
           "default": "SHOP COLLECTION"
+        },
+        {
+          "type": "color",
+          "id": "two-box_color",
+          "label": "Background color",
+          "default": "#966060"
+ 
         }
         
         
