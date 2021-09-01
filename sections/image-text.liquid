@@ -12,7 +12,7 @@
       <h3 class="middle__top__contain__content__heading">the beauty trend</h3>
       {%endif%}
       <div class="middle__top__contain__content__body">
-        <div class="line"> </div>
+        {%- if section.settings.line-%} <div class="line"> </div>{%endif%}
         {%- if section.settings.left_body != blank -%}
 <p>{{section.settings.left_body}}</p>
           {%else%}
@@ -106,6 +106,13 @@
 
 
           ]
+  
+        },
+        {
+          "type": "checkbox",
+          "id": "line",
+          "label": "Disable accent line",
+          "default": false
   
         },
         {
