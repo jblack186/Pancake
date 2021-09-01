@@ -7,6 +7,8 @@
           "type": "text",
           "settings": {
             "heading": "Beauty Shop",
+            "hero1_background": "#fef7ee",
+            "hero1-heading__color": "#fef7ee",
             "body": "We have ingrendients dffffhat are of the most premium quality. Created with love and care to provide the finest glow to an oily face.",
             "image": "shopify:\/\/shop_images\/model-laughs-barefoot.jpg",
             "featureImage": "shopify:\/\/shop_images\/bright-eyeshadow-makeup.jpg",
@@ -23,10 +25,12 @@
         "b7f81788-45bd-4c1b-a185-e136b55d630b"
       ],
       "settings": {
-        "hero_type": "heroOne",
+        "hero_type": "heroTwo",
         "opacity": 7,
         "font_size": 48,
-        "text_position": 47
+        "text_position": 47,
+        "hero_background": "#0066c9",
+        "hero-text__color": "#000000"
       }
     },
     "1630253183e5d0ef78": {
