@@ -59,13 +59,13 @@
     {% when 'heroOne' %}
   
 <section class="hero {{block.settings.position}}">
-  <div class="hero__left">
+  <div class="hero__left" style="background: {{section.settings.hero1_background}}">
   <div class="hero__left__emptySpace"> </div>
 
     <div class="hero__left__content">
 
-    <h2 class="hero__left__content__heading"  style="font-size: {{section.settings.font_size}}px">{{ block.settings.heading | escape }}</h2>
-<p class="hero__left__content__body">{{ block.settings.body | escape }}</p>
+    <h2 class="hero__left__content__heading"  style="font-size: {{section.settings.font_size}}px; color: {{section.settings.hero-text__color}}">{{ block.settings.heading | escape }}</h2>
+<p style="{{color: {{section.settings.hero-text__color}}" class="hero__left__content__body">{{ block.settings.body | escape }}</p>
 </div>
 
 <div class="hero__left__featured">
@@ -190,7 +190,14 @@
       "id": "hero_background",
       "label": "Hero background",
       "default": "#000000"
-    }
+    },
+    {
+      "type": "color",
+      "id": "hero-text__color",
+      "label": "Hero text color",
+      "default": "#000000"
+    },
+
 
   ],
 
@@ -208,6 +215,20 @@
           "label": "Hero heading",
           "default": "Beauty Shop"
         },
+        {
+          "type": "color",
+          "id": "hero1_background",
+          "label": "Hero 1 left background",
+          "default": "#fef7ee"
+        },
+        {
+          "type": "color",
+          "id": "hero1-heading__color",
+          "label": "Hero 1 left background",
+          "default": "#fef7ee"
+        },
+
+    
  
         {
           "type": "text",
