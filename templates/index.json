@@ -7,14 +7,15 @@
           "type": "text",
           "settings": {
             "heading": "Beauty Shop",
+            "hero1__background": "#fef7ee",
             "body": "We have ingrendients  are of the most premium quality. Created with love and care to provide the finest glow to an oily face.",
-            "image": "shopify:\/\/shop_images\/womens-necklace.jpg",
+            "image": "shopify:\/\/shop_images\/amir-seilsepour-VLJV46hPLSM-unsplash_1.jpg",
             "featureImage": "shopify:\/\/shop_images\/bright-eyeshadow-makeup.jpg",
             "left-hero_image": "shopify:\/\/shop_images\/model-sitting-pose.jpg",
             "right-hero_image": "shopify:\/\/shop_images\/bright-eyeshadow-makeup.jpg",
             "hero_button": "SHOP COLLECTION",
             "featuredImg_width": 180,
-            "position": "right",
+            "position": "left",
             "hero-two__color": "light"
           }
         }
@@ -24,10 +25,11 @@
       ],
       "settings": {
         "hero_type": "heroOne",
-        "opacity": 4,
+        "opacity": 3,
         "font_size": 60,
         "text_position": 47,
-        "hero_background": "#FAF1E9"
+        "hero_background": "#faf1e9",
+        "hero-text__color": "#000000"
       }
     },
     "1630253183e5d0ef78": {
@@ -40,6 +42,8 @@
       "type": "image-text",
       "settings": {
         "image": "shopify:\/\/shop_images\/bright-eyeshadow-makeup.jpg",
+        "align__text": "flex-start",
+        "line": false,
         "heading": "We are going",
         "body": "We're a wellnvbess and beauty brand empowering eople to live a happy and healthy life.",
         "left_heading": "the beauty yep",
@@ -88,19 +92,6 @@
         "one-box_color": "#966060",
         "one-box-text_color": "#ffffff"
       }
-    },
-    "163038804204650970": {
-      "type": "two-text",
-      "settings": {
-        "two-left_heading": "Increase Your Beauty",
-        "two-left_body": "Capture your ture self. Our products are of the utmost quality. Shop here.",
-        "right_heading": "Increase Your Beauty",
-        "right_body": "Capture your ture self. Our products are of the utmost quality. Shop here.",
-        "featured_collection": "earings",
-        "button_text": "SHOP COLLECTION",
-        "two-box_color": "#966060",
-        "two-box-text_color": "#ffffff"
-      }
     }
   },
   "order": [
@@ -110,7 +101,6 @@
     "1630182655bd5a0cfa",
     "1630357071491faa12",
     "16303570647fea5397",
-    "1630376995bfc9b0f9",
-    "163038804204650970"
+    "1630376995bfc9b0f9"
   ]
 }
