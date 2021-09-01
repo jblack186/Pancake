@@ -23,8 +23,8 @@
         "b7f81788-45bd-4c1b-a185-e136b55d630b"
       ],
       "settings": {
-        "hero_type": "heroTwo",
-        "opacity": 5,
+        "hero_type": "heroOne",
+        "opacity": 7,
         "font_size": 48,
         "text_position": 47
       }
@@ -73,7 +73,9 @@
         "right_heading": "Increase Your Beauty",
         "right_body": "Capture your ture self. Our products are of the utmost quality. Shop here.",
         "featured_collection": "earings",
-        "button_text": "SHOP COLLECTION"
+        "button_text": "SHOP COLLECTION",
+        "two-box_color": "#966060",
+        "two-box-text_color": "#ffffff"
       }
     },
     "1630376995bfc9b0f9": {
@@ -81,7 +83,9 @@
       "settings": {
         "i-mid_heading": "Increase Your Beauty",
         "i-mid_body": "Capture your ture self. Our products are of the utmost quality. Shop here.",
-        "i-featured_collection": "jewelry"
+        "i-featured_collection": "jewelry",
+        "one-box_color": "#966060",
+        "one-box-text_color": "#ffffff"
       }
     },
     "163038804204650970": {
@@ -92,7 +96,9 @@
         "right_heading": "Increase Your Beauty",
         "right_body": "Capture your ture self. Our products are of the utmost quality. Shop here.",
         "featured_collection": "earings",
-        "button_text": "SHOP COLLECTION"
+        "button_text": "SHOP COLLECTION",
+        "two-box_color": "#966060",
+        "two-box-text_color": "#ffffff"
       }
     }
   },
