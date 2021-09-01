@@ -16,10 +16,19 @@
 
 
 {%endif%}
-.headers {
- height: {{section.settings.height}}px;
+.headers-sticky {
+  display: flex;
+  position: fixed!important;
+  width: 100%;
+  top: 0px!important;
+  left: 0px;
+  z-index: 9;
+  align-items: center;
+  height: {{section.settings.height}}px;
+
 
 }
+
 
 .hero-three__content h2 {
   font-size: {{section.settings.font_size}}}px;
