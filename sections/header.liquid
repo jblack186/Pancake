@@ -43,8 +43,8 @@
       {%- if link.links == blank -%}
         {%- for link in section.settings.menu.links -%}
           {%- if section.settings.menu != blank -%}
-      <li style="color: {{section.settings.header__color}}" class="header__list__left__item">
-        <a href="{{ link.url }}" class="{{section.settings.header_colors}}">{{ link.title | escape }}</a>
+      <li class="header__list__left__item">
+        <a style="color: {{section.settings.header__color}}" href="{{ link.url }}" class="{{section.settings.header_colors}}">{{ link.title | escape }}</a>
       </li>
     {%- endif -%}
   {%- endfor -%}
@@ -111,8 +111,8 @@
             {%- if link.links == blank -%}
               {%- for link in section.settings.menu.links -%}
                 {%- if section.settings.menu != blank -%}
-            <li style="color: {{section.settings.header__color}}" class="header__list__left__item ">
-              <a href="{{ link.url }}" class="{{section.settings.header_colors}}">{{ link.title | escape }}</a>
+            <li class="header__list__left__item ">
+              <a style="color: {{section.settings.header__color}}" href="{{ link.url }}" class="{{section.settings.header_colors}}">{{ link.title | escape }}</a>
             </li>
           {%- endif -%}
         {%- endfor -%}
