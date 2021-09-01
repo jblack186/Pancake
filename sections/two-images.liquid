@@ -13,10 +13,10 @@
   {% endfor %}
 
     </div>
-    <div class="two-text__text">
+    <div class="two-text__text" style="background-color: {{section.settings.one-box_color}}">
       <div class="two-text__text__content">
-        <h3>{{section.settings.i-mid_heading}}</h3>
-        <p>{{section.settings.i-mid_body}}</p>
+        <h3 style="color: {{section.settings.one-box-text_color}}">{{section.settings.i-mid_heading}}</h3>
+        <p style="color: {{section.settings.one-box-text_color}}">{{section.settings.i-mid_body}}</p>
         </div>
     </div>
     <div class="two-text__img overlay">
@@ -61,6 +61,20 @@
           "type": "collection",
           "id": "i-featured_collection",
           "label": "Featured Collection"
+        },
+        {
+          "type": "color",
+          "id": "one-box_color",
+          "label": "Background color",
+          "default": "#966060"
+ 
+        },
+        {
+          "type": "color",
+          "id": "one-box-text_color",
+          "label": "Color",
+          "default": "#ffffff"
+ 
         }
         
         
