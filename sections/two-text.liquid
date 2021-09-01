@@ -6,13 +6,13 @@
 <section class="two-text">
   <div class="two-text__text" style="background-color: {{section.settings.two-box_color}}">
     <div class="two-text__text__content">
-  <h3>{{section.settings.two-left_heading}}</h3>
-    <p>{{section.settings.two-left_body}}</p>
+  <h3 style="color: {{section.settings.two-box-text_color}}">{{section.settings.two-left_heading}}</h3>
+    <p style="color: {{section.settings.two-box-text_color}}">{{section.settings.two-left_body}}</p>
     </div>
   </div>
   <div class="two-text__img overlay">
     {%- for product in section.settings.featured_collection.products limit:1 -%}
-      <h3 class="two-text__img__heading overlay">{{product.title}}</h3>
+      <h3 class="two-text__img__heading overlay" >{{product.title}}</h3>
     <img src="{{product.featured_image.src | img_url: '240x'}}" alt="item" />
     {%else%}
     <p>No collection</p>
@@ -21,8 +21,8 @@
     </div>
     <div class="two-text__text"  style="background-color: {{section.settings.two-box_color}}">
       <div class="two-text__text__content">
-        <h3>{{section.settings.right_heading}}</h3>
-        <p>{{section.settings.right_body}}</p>
+        <h3 style="color: {{section.settings.two-box-text_color}}">{{section.settings.right_heading}}</h3>
+        <p style="color: {{section.settings.two-box-text_color}}">{{section.settings.right_body}}</p>
         </div>
     </div>
 </section>
@@ -90,6 +90,13 @@
           "id": "two-box_color",
           "label": "Background color",
           "default": "#966060"
+ 
+        },
+        {
+          "type": "color",
+          "id": "two-box-text_color",
+          "label": "Color",
+          "default": "#ffff"
  
         }
         
