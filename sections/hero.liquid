@@ -16,6 +16,20 @@
   
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 3;
+  opacity: .{{section.settings.opacity}};
+  
+}
+
+
 .hero-three__content {
   position: absolute;
   width: 50%;
@@ -170,6 +184,12 @@
       "max": 70,
       "step": 1,
       "default": 40
+    },
+    {
+      "type": "color",
+      "id": "hero_background",
+      "label": "Hero background",
+      "default": "#000000"
     }
 
   ],
