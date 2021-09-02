@@ -43,6 +43,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/bright-eyeshadow-makeup.jpg",
         "align__text": "flex-start",
+        "it-width": "100%",
         "line": false,
         "heading": "We are going",
         "body": "We're a wellnvbess and beauty brand empowering eople to live a happy and healthy life.",
@@ -92,6 +93,19 @@
         "one-box_color": "#966060",
         "one-box-text_color": "#ffffff"
       }
+    },
+    "1630558037e8d9c3e8": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": ""
+      }
+    },
+    "163055803493804571": {
+      "type": "collection",
+      "settings": {
+        "collection": "jewelry",
+        "total_products": 16
+      }
     }
   },
   "order": [
@@ -101,6 +115,8 @@
     "1630182655bd5a0cfa",
     "1630357071491faa12",
     "16303570647fea5397",
-    "1630376995bfc9b0f9"
+    "1630376995bfc9b0f9",
+    "1630558037e8d9c3e8",
+    "163055803493804571"
   ]
 }
