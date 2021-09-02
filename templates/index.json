@@ -24,11 +24,11 @@
         "b7f81788-45bd-4c1b-a185-e136b55d630b"
       ],
       "settings": {
-        "hero_type": "heroOne",
+        "hero_type": "heroTwo",
         "opacity": 3,
         "font_size": 60,
         "text_position": 47,
-        "hero_background": "#faf1e9",
+        "hero_background": "#1A1B18",
         "hero-text__color": "#000000"
       }
     },
@@ -104,7 +104,7 @@
       "type": "collection",
       "settings": {
         "collection": "jewelry",
-        "total_products": 16
+        "total_products": 3
       }
     }
   },

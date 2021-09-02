@@ -4,12 +4,14 @@
       "header": {
         "type": "header",
         "settings": {
-          "header_type": "headerTwo",
-          "positions": false,
-          "height": 70,
+          "header_type": "headerOne",
+          "positions": true,
+          "header__background": "#fff",
+          "header__color": "#1A1B18",
+          "height": 75,
           "header_colors": "header-color2",
-          "logo": "shopify:\/\/shop_images\/jupyter.png",
-          "logo_width": 70,
+          "logo": "shopify:\/\/shop_images\/atelier-logo-alt2-dark_2x_0e5bf336-f417-4b0f-9cac-9c1e8b138308.png",
+          "logo_width": 160,
           "menu": "main-jamies-menu",
           "menu_two": "main-menu"
         }
