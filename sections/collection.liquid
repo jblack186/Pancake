@@ -34,7 +34,7 @@
       <h2>{{ product.title }}</h2>
       {% comment %} <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> {% endcomment %}
     </div>
-    <div class="collection__item__cart" style="background: {{section.settings.price-cart__background}}">
+    <div class="collection__item__cart" {%if {{section.settings.price-cart__background}} %} style="display: flex" {%else%} style="display: none" {%endif%} > 
       <p>${{ product.price }}</p>
       <a href="{{product.url}}">Add to cart</a>
     </div>
