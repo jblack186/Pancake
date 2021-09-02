@@ -34,7 +34,7 @@
       <h2>{{ product.title }}</h2>
       {% comment %} <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> {% endcomment %}
     </div>
-    <div class="collection__item__cart">
+    <div class="collection__item__cart" style="background: {{section.settings.price-cart__background}}">
       <p>${{ product.price }}</p>
       <a href="{{product.url}}">Add to cart</a>
     </div>
@@ -61,7 +61,14 @@
 			"step": 1,
 			"label": "Total Products",
 			"default": 16
+    },
+    {
+			"type": "checkbox",
+			"id": "price-cart__background",
+      "label": "Price-Cart background",
+      "default": true
 		}
+
         
         
       ],
