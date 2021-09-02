@@ -6,10 +6,12 @@
         "settings": {
           "header_type": "headerTwo",
           "positions": false,
-          "height": 70,
+          "header__background": "#1A1B18",
+          "header__color": "#fff",
+          "height": 75,
           "header_colors": "header-color2",
-          "logo": "shopify:\/\/shop_images\/jupyter.png",
-          "logo_width": 70,
+          "logo": "shopify:\/\/shop_images\/logo_7.42.47_PM.png",
+          "logo_width": 100,
           "menu": "main-jamies-menu",
           "menu_two": "main-menu"
         }
