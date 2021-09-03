@@ -48,24 +48,24 @@
 
 
 <header class="{%- if section.settings.positions -%} headers-sticky {%else%} headers {%endif%}"  style="background: {{section.settings.header__background}}">
-  <div id="main">
-    <div class="d-flex mb-3 inputs">
-        <div class="form-group">
-            <input id="hours" class="form-control form-control-lg" type="number" min=0 value="0" name="hours" />h
-        </div>
-        <div class="form-group">
-            <input id="minutes" class="form-control form-control-lg" type="number" min=0 value="5" name="minutes">m
-        </div>
-        <div class="form-group">
-            <input id="seconds" class="form-control form-control-lg" type="number" min=0 value="0" name="seconds">s
-        </div>
-    </div>
-    <div class="d-flex buttons justify-content-center">
-        <button class="btn btn-outline-primary btn-start-resume">Start</button>
-        <button class="btn btn-outline-primary btn-pause">Pause</button>
-        <button class="btn btn-outline-primary btn-stop">Stop</button>
-        <button class="btn btn-outline-primary btn-reset">Reset</button>
-    </div>
+  <div id="countdown" class="countdown">
+    <div class="time">
+    <h2 id="days">00</h2>
+    <small>Days</small>
+</div>
+<div class="time">
+  <h2 id="hours">00</h2>
+  <small>Hours</small>
+</div>
+<div class="time">
+  <h2 id="minutes">00</h2>
+  <small>Minutes</small>
+</div>
+<div class="time">
+  <h2 id="seconds">00</h2>
+  <small>Seconds</small>
+</div>
+
 </div>
   <ul class="header__list">
     <div class="header__list__left">
@@ -279,95 +279,29 @@
 
 
 <script>
-  const hoursEl = document.querySelector('#hours');
-  const minutesEl = document.querySelector('#minutes');
-  const secondsEl = document.querySelector('#seconds');
-  const btnStart = document.querySelector('.btn-start-resume');
-  const btnPause = document.querySelector('.btn-pause');
-  const btnStop = document.querySelector('.btn-stop');
-  const btnReset = document.querySelector('.btn-reset');
-  let interval;
-  let pause = false;
-  let totalSeconds = 0;
-  let totalSecondsBackup = 0;
+  const days = document.getElementById('days');
+  const hours = document.getElementById('hours');
+  const minutes = document.getElementById('minutes');
+  const seconds = document.getElementById('seconds');
   
-  init();
+  const currentYear = new Date().getFullYear();
   
-  function init() {
-      btnPause.style.display = 'none';
-      btnStop.style.display = 'none';
-      btnReset.style.display = 'none';
+  const newYearTime = new Date(`January 01 ${currentYear + 1} 00:00:00`);
   
+  // Update countdown time
+  function updateCountdown() {
+    const currentTime = new Date();
+    const diff = newYearTime - currentTime;
   
-      btnStart.addEventListener('click', () => {
-          const hours = parseInt(hoursEl.value);
-          const minutes = parseInt(minutesEl.value);
-          const seconds = parseInt(secondsEl.value);
+    const d = Math.floor(diff / 1000 / 60 / 60 / 24);
+    const h = Math.floor(diff / 1000 / 60 / 60) % 24;
+    const m = Math.floor(diff / 1000 / 60) % 60;
+    const s = Math.floor(diff / 1000) % 60;
   
-          totalSecondsBackup = totalSeconds = hours * 60 * 60 + minutes * 60 + seconds;
-          if (totalSeconds < 0) {
-              return;
-          }
-  
-          startTimer();
-  
-          btnPause.style.display = 'inline-block';
-          btnStop.style.display = 'inline-block';
-          btnReset.style.display = 'inline-block';
-          btnStart.style.display = 'none';
-      });
-  
-      btnPause.addEventListener('click', () => {
-          pause = !pause;
-          if (pause) {
-              btnPause.innerText = 'Resume';
-          } else {
-              btnPause.innerText = 'Pause';
-          }
-      })
-  
-      btnStop.addEventListener('click', () => {
-          stopTimer();
-          totalSeconds = totalSecondsBackup;
-          pause = false;
-          updateInputs();
-  
-          btnPause.style.display = 'none';
-          btnStop.style.display = 'none';
-          btnReset.style.display = 'none';
-          btnStart.style.display = '';
-      })
-  
-      btnReset.addEventListener('click', () => {
-          totalSeconds = totalSecondsBackup;
-          updateInputs();
-      })
+    days.innerHTML = d;
+    hours.innerHTML = h < 10 ? '0' + h : h;
+    minutes.innerHTML = m < 10 ? '0' + m : m;
+    seconds.innerHTML = s < 10 ? '0' + s : s;
   }
   
-  function startTimer() {
-      interval = setInterval(() => {
-  
-          if (pause) return;
-          totalSeconds--;
-          updateInputs();
-  
-          if (totalSeconds <= 0) {
-              stopTimer();
-          }
-      }, 1000)
-  }
-  
-  function stopTimer() {
-      interval = clearInterval(interval);
-  }
-  
-  function updateInputs() {
-      const hours = Math.floor(totalSeconds / 60 / 60);
-      const minutes = Math.floor(totalSeconds / 60);
-      const seconds = totalSeconds % 60;
-  
-      hoursEl.value = hours;
-      minutesEl.value = minutes;
-      secondsEl.value = seconds;
-  }
-</script>
+  setInterval(updateCountdown, 1000);</script>
