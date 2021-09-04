@@ -103,20 +103,70 @@
       ]
     },
   {
-  "type": "image_picker",
-  "id": "logo",
-  "label": "t:sections.header.settings.logo.label"
+  "type": "select",
+  "id": "month",
+  "label": "Month",
+  "options": [
+    {
+      "value": "January",
+      "label": "January"
+    },
+    {
+      "value": "February",
+      "label": "February"
+    },
+    {
+      "value": "March",
+      "label": "March"
+    }
+
+  ]
   },
   {
-  "type": "range",
-  "id": "logo_width",
-  "min": 50,
-  "max": 250,
-  "step": 10,
-  "default": 100,
-  "unit": "t:sections.header.settings.logo_width.unit",
-  "label": "t:sections.header.settings.logo_width.label"
-  }
+    "type": "select",
+    "id": "Day",
+    "label": "Day",
+    "default": "1",
+    "options": [
+      {
+        "value": "1",
+        "label": "1"
+      },
+      {
+        "value": "2",
+        "label": "2"
+      },
+      {
+        "value": "3",
+        "label": "3"
+      }
+  
+    ]
+    },
+    {
+      "type": "select",
+      "id": "year",
+      "label": "Year",
+      "default": "2022",
+      "options": [
+        {
+          "value": "2021",
+          "label": "2021"
+        },
+        {
+          "value": "2022",
+          "label": "2022"
+        },
+        {
+          "value": "2023",
+          "label": "2023"
+        }
+    
+      ]
+      }
+    
+  
+
   ],
   
   "presets": [
@@ -137,7 +187,7 @@
   
   const currentYear = new Date().getFullYear();
   
-  const newYearTime = new Date(`September 3 2021 00:00:00`);
+  const newYearTime = new Date(`{{section.settings.month}} 00:00:00`);
   
   // Update countdown time
   function updateCountdown() {
