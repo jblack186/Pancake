@@ -28,7 +28,7 @@
         "opacity": 3,
         "font_size": 60,
         "text_position": 47,
-        "hero_background": "#1A1B18",
+        "hero_background": "#1a1b18",
         "hero-text__color": "#000000"
       }
     },
@@ -104,7 +104,20 @@
       "type": "collection",
       "settings": {
         "collection": "jewelry",
-        "total_products": 3
+        "total_products": 3,
+        "price-cart__background": true
+      }
+    },
+    "1630717381540aa902": {
+      "type": "countdown",
+      "settings": {
+        "header_type": "headerOne",
+        "positions": false,
+        "header__background": "#ffffff",
+        "header__color": "#000000",
+        "height": 70,
+        "header_colors": "header-color1",
+        "logo_width": 100
       }
     }
   },
@@ -117,6 +130,7 @@
     "16303570647fea5397",
     "1630376995bfc9b0f9",
     "1630558037e8d9c3e8",
-    "163055803493804571"
+    "163055803493804571",
+    "1630717381540aa902"
   ]
 }
