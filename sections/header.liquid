@@ -74,15 +74,16 @@
       <ul class="collection-link__sub-links">
         {%- for childlink in link.links -%}
         <li><a href="{{ childlink.url }}">{{ childlink.title | escape }}</a></li>
+        {%- for grandchildlink in childlink.links -%}
+          <li>
+            <a href="{{ grandchildlink.url }}" class="">
+              {{ grandchildlink.title | escape }}
+            </a>
+          </li>
+        {%- endfor -%}
+  
         {%- endfor -%}
       </ul>
-      {%- for grandchildlink in childlink.links -%}
-        <li>
-          <a href="{{ grandchildlink.url }}" class="">
-            {{ grandchildlink.title | escape }}
-          </a>
-        </li>
-      {%- endfor -%}
     {%- endif -%}
   {%- endfor -%}
   {%- endif %}
