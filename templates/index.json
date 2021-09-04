@@ -1,14 +1,5 @@
 {
   "sections": {
-    "1630768932fd3f73cc": {
-      "type": "countdown",
-      "settings": {
-        "month": "October",
-        "day": "4",
-        "year": "2021",
-        "hours": 0
-      }
-    },
     "hero": {
       "type": "hero",
       "blocks": {
@@ -119,7 +110,6 @@
     }
   },
   "order": [
-    "1630768932fd3f73cc",
     "hero",
     "1630253183e5d0ef78",
     "163025194085f402dd",
