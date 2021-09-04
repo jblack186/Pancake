@@ -46,7 +46,7 @@
   {% when 'headerOne' %}
 
 
-
+<div>
 <header class="{%- if section.settings.positions -%} headers-sticky {%else%} headers {%endif%}"  style="background: {{section.settings.header__background}}">
   <ul class="header__list">
     <div class="header__list__left">
@@ -98,6 +98,28 @@
   </div> 
 
 </header>
+{%- if section.settings.countdown -%}
+<div id="countdown" class="countdown">
+  <div class="time">
+  <h2 id="days">00</h2>
+  <small>Days</small>
+</div>
+<div class="time">
+<h2 id="hours">00</h2>
+<small>Hours</small>
+</div>
+<div class="time">
+<h2 id="minutes">00</h2>
+<small>Minutes</small>
+</div>
+<div class="time">
+<h2 id="seconds">00</h2>
+<small>Seconds</small>
+</div>
+
+</div>
+{%- endif -%}
+</div>
 
 
     {% when 'headerTwo' %}
@@ -253,7 +275,97 @@
   "id": "menu_two",
   "default": "main-menu",
   "label": "Alternate Menu"
-  }
+  },
+  {
+    "type": "checkbox",
+    "id": "countdown",
+    "default": false,
+    "label": "Countdown"
+  
+  },
+    
+  {
+    "type": "select",
+    "id": "month",
+    "label": "Month",
+    "options": [
+      {
+        "value": "January",
+        "label": "January"
+      },
+      {
+        "value": "February",
+        "label": "February"
+      },
+      {
+        "value": "March",
+        "label": "March"
+      },
+      {
+        "value": "September",
+        "label": "September"
+      },
+      {
+        "value": "October",
+        "label": "October"
+      }
+    ]
+    },
+    {
+      "type": "select",
+      "id": "day",
+      "label": "Day",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        }
+    
+      ]
+      },
+      {
+        "type": "select",
+        "id": "year",
+        "label": "Year",
+        "options": [
+          {
+            "value": "2021",
+            "label": "2021"
+          },
+          {
+            "value": "2022",
+            "label": "2022"
+          },
+          {
+            "value": "2023",
+            "label": "2023"
+          }
+      
+        ]
+        },
+        {
+          "type": "number",
+          "id": "hours",
+          "label": "Hours (max 24)"
+         
+  
+          }
   ]
   }
 {% endschema %}
