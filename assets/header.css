@@ -16,6 +16,8 @@
 
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 9;
  
 
 }
@@ -155,13 +157,15 @@
 
   h1 {
     font-weight: normal;
-    font-size: 60px;
+    font-size: 120px;
     margin: -150px 0 40px;
   }
   
   .countdown {
     display: flex;
-    transform: scale(1);
+    position: absolute;
+    top: 0px;
+    z-index: 2;
   }
   
   .time {
