@@ -111,10 +111,10 @@
     "1630768932fd3f73cc": {
       "type": "countdown",
       "settings": {
-        "month": "September",
+        "month": "October",
         "day": "4",
         "year": "2021",
-        "hours": 12
+        "hours": 0
       }
     }
   },
