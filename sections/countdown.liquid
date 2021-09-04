@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ 'header.css' | asset_url }}" media="print" onload="this.media='all'">
+{% comment %} <link rel="stylesheet" href="{{ 'header.css' | asset_url }}" media="print" onload="this.media='all'">
 
 <noscript>{{ 'header.css' | asset_url | stylesheet_tag }}</noscript>
 
@@ -160,4 +160,4 @@
     seconds.innerHTML = s < 10 ? '0' + s : s;
   }
   
-  setInterval(updateCountdown, 1000);</script>
+  setInterval(updateCountdown, 1000);</script> {% endcomment %}
