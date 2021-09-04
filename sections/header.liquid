@@ -16,6 +16,13 @@
 
 #countdown {
   margin-top: {{section.settings.height}}px;
+  background: {{section.settings.countdown_background}};
+  color: {{section.settings.countdown_color}};
+}
+
+#countdown h2{
+  color: {{section.settings.countdown_color}};
+
 }
 
 {%endif%}
@@ -107,14 +114,18 @@
 </header>
 {%- if section.settings.countdown -%}
 <div id="countdown" class="countdown">
+  <p class="countdown__heading">{{section.settings.countdown_text}}</p>
+  <div class="countdown__content">
   <div class="time">
   <h2 id="days">00</h2>
   <small>Days</small>
 </div>
+
 <div class="time">
 <h2 id="hours">00</h2>
 <small>Hours</small>
 </div>
+
 <div class="time">
 <h2 id="minutes">00</h2>
 <small>Minutes</small>
@@ -123,7 +134,10 @@
 <h2 id="seconds">00</h2>
 <small>Seconds</small>
 </div>
-
+</div>
+<div class="countdown__button">
+<a href="/collections">{{section.settings.countdown_button-text}}</a>
+</div>
 </div>
 {%- endif -%}
 </div>
@@ -372,7 +386,40 @@
           "label": "Hours (max 24)"
          
   
-          }
+          },
+          {
+            "type": "color",
+            "id": "countdown_background",
+            "label": "Countdown background",
+            "default": "#8A2BE2"
+           
+    
+            },
+            {
+              "type": "color",
+              "id": "countdown_color",
+              "label": "Countdown color",
+              "default": "#ffffff"
+             
+      
+              },
+              {
+                "type": "text",
+                "id": "countdown_text",
+                "label": "Countdown text",
+                "default": "10% sale until Friday! Don't miss out."
+               
+        
+                },
+                {
+                  "type": "text",
+                  "id": "countdown_button-text",
+                  "label": "Countdown button text",
+                  "default": "Shop now"
+                 
+          
+                  }
+  
   ]
   }
 {% endschema %}
