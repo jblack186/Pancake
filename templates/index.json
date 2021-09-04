@@ -114,7 +114,9 @@
         "month": "February",
         "Day": "2",
         "year": "2023",
-        "hours": 25
+        "hours": 24,
+        "minutes": 0,
+        "seconds": 0
       }
     }
   },
