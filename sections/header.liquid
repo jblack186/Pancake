@@ -71,6 +71,11 @@
       <li class="header__list__left__item">
         <a style="color: {{section.settings.header__color}}" href="{{ link.url }}" class="{{section.settings.header_colors}}">{{ link.title | escape }}</a>
       </li>
+      <ul class="collection-link__sub-links">
+        {%- for childlink in link.links -%}
+        <li><a href="{{ childlink.url }}">{{ childlink.title | escape }}</a></li>
+        {%- endfor -%}
+      </ul>
     {%- endif -%}
   {%- endfor -%}
   {%- endif %}
