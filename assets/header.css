@@ -161,7 +161,7 @@
   
   .countdown {
     display: flex;
-    transform: scale(2);
+    transform: scale(1);
   }
   
   .time {
@@ -176,7 +176,8 @@
     font-weight: bold;
     font-size: 36px;
     line-height: 1;
-    margin: 0 0 5px;
+   
+
   }
   
   @media (max-width: 500px) {

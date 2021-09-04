@@ -1,0 +1,151 @@
+<link rel="stylesheet" href="{{ 'header.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'header.css' | asset_url | stylesheet_tag }}</noscript>
+
+
+
+
+ 
+  <div id="countdown" class="countdown">
+    <div class="time">
+    <h2 id="days">00</h2>
+    <small>Days</small>
+</div>
+<div class="time">
+  <h2 id="hours">00</h2>
+  <small>Hours</small>
+</div>
+<div class="time">
+  <h2 id="minutes">00</h2>
+  <small>Minutes</small>
+</div>
+<div class="time">
+  <h2 id="seconds">00</h2>
+  <small>Seconds</small>
+</div>
+
+</div>
+
+
+
+
+
+{% schema %}
+{
+  "name": "Countdown",
+
+  "settings": [
+  {
+  "type": "select",
+  "id": "header_type",
+  "label": "Type Of Header",
+  "options": [
+  {
+  "value": "headerOne",
+  "label": "Header 1"
+  },
+  {
+  "value": "headerTwo",
+  "label": "Header 2"
+  }
+  ],
+  "default": "headerOne"
+  },
+  {
+    "type": "checkbox",
+    "id": "positions",
+    "label": "Sticky header",
+    "default": false
+  },
+
+  {
+    "type": "color",
+    "id": "header__background",
+    "label": "Header background",
+    "default": "#ffffff"
+  },
+  {
+    "type": "color",
+    "id": "header__color",
+    "label": "Header text color",
+    "default": "#000000"
+  },
+
+
+  {
+    "type": "range",
+    "id": "height",
+    "min": 60,
+    "max": 120,
+    "step": 1,
+    "default": 70,
+    "label": "Height"
+    },
+    {
+      "type": "select",
+      "id": "header_colors",
+      "label": "Header color",
+      "default": "header-color1",
+      "options": [
+        {
+          "value": "header-color1",
+          "label": "Header color 1"
+        },
+        {
+          "value": "header-color2",
+          "label": "Header color 2"
+        },
+        {
+          "value": "header-color3",
+          "label": "Header color 3"
+        }
+
+      ]
+    },
+  {
+  "type": "image_picker",
+  "id": "logo",
+  "label": "t:sections.header.settings.logo.label"
+  },
+  {
+  "type": "range",
+  "id": "logo_width",
+  "min": 50,
+  "max": 250,
+  "step": 10,
+  "default": 100,
+  "unit": "t:sections.header.settings.logo_width.unit",
+  "label": "t:sections.header.settings.logo_width.label"
+  }
+  ]
+  }
+{% endschema %}
+
+
+<script>
+  const days = document.getElementById('days');
+  const hours = document.getElementById('hours');
+  const minutes = document.getElementById('minutes');
+  const seconds = document.getElementById('seconds');
+  
+  const currentYear = new Date().getFullYear();
+  
+  const newYearTime = new Date(`September 3 2021 00:00:00`);
+  
+  // Update countdown time
+  function updateCountdown() {
+    const currentTime = new Date();
+    const diff = newYearTime - currentTime;
+  
+    const d = Math.floor(diff / 1000 / 60 / 60 / 24);
+    const h = Math.floor(diff / 1000 / 60 / 60) % 24;
+    const m = Math.floor(diff / 1000 / 60) % 60;
+    const s = Math.floor(diff / 1000) % 60;
+  
+    days.innerHTML = d;
+    hours.innerHTML = h < 10 ? '0' + h : h;
+    minutes.innerHTML = m < 10 ? '0' + m : m;
+    seconds.innerHTML = s < 10 ? '0' + s : s;
+  }
+  
+  setInterval(updateCountdown, 1000);</script>
