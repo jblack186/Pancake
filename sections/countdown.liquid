@@ -144,7 +144,7 @@
   
   const currentYear = new Date().getFullYear();
   
-  const newYearTime = new Date(`{{section.settings.month}} {{section.settings.day}} {{section.settings.year}} 00:00:00`);
+  const newYearTime = new Date(`{{section.settings.month}} {{section.settings.day}} {{section.settings.year}} {{section.settings.hours}}:{{section.settings.minutes}}:{{section.settings.seconds}}`);
   
   // Update countdown time
   function updateCountdown() {
