@@ -84,6 +84,10 @@
       {
         "value": "4",
         "label": "4"
+      },
+      {
+        "value": "5",
+        "label": "5"
       }
   
     ]
@@ -156,7 +160,7 @@
   const currentYear = new Date().getFullYear();
   
   const saleDate = new Date(`{{section.settings.month}} {{section.settings.day}} {{section.settings.year}} {{section.settings.hours}}:{{section.settings.minutes}}:{{section.settings.seconds}}`);
-  console.log("newyear", saleDate)
+  console.log("sale date", saleDate)
   // Update countdown time
   function updateCountdown() {
     const currentTime = new Date();
