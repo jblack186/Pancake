@@ -78,7 +78,7 @@
       </ul>
       {%- for grandchildlink in childlink.links -%}
         <li>
-          <a href="{{ grandchildlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+          <a href="{{ grandchildlink.url }}" class="">
             {{ grandchildlink.title | escape }}
           </a>
         </li>
