@@ -35,73 +35,8 @@
   "name": "Countdown",
 
   "settings": [
-  {
-  "type": "select",
-  "id": "header_type",
-  "label": "Type Of Header",
-  "options": [
-  {
-  "value": "headerOne",
-  "label": "Header 1"
-  },
-  {
-  "value": "headerTwo",
-  "label": "Header 2"
-  }
-  ],
-  "default": "headerOne"
-  },
-  {
-    "type": "checkbox",
-    "id": "positions",
-    "label": "Sticky header",
-    "default": false
-  },
-
-  {
-    "type": "color",
-    "id": "header__background",
-    "label": "Header background",
-    "default": "#ffffff"
-  },
-  {
-    "type": "color",
-    "id": "header__color",
-    "label": "Header text color",
-    "default": "#000000"
-  },
-
-
-  {
-    "type": "range",
-    "id": "height",
-    "min": 60,
-    "max": 120,
-    "step": 1,
-    "default": 70,
-    "label": "Height"
-    },
-    {
-      "type": "select",
-      "id": "header_colors",
-      "label": "Header color",
-      "default": "header-color1",
-      "options": [
-        {
-          "value": "header-color1",
-          "label": "Header color 1"
-        },
-        {
-          "value": "header-color2",
-          "label": "Header color 2"
-        },
-        {
-          "value": "header-color3",
-          "label": "Header color 3"
-        }
-
-      ]
-    },
+  
+  
   {
   "type": "select",
   "id": "month",
@@ -163,9 +98,31 @@
         }
     
       ]
-      }
+      },
+      {
+        "type": "number",
+        "id": "hours",
+        "label": "Hours"
+       
+
+        },
+        {
+          "type": "number",
+          "id": "minutes",
+          "label": "Minutes"
+         
+
+          },
+          {
+            "type": "number",
+            "id": "seconds",
+            "label": "Seconds"
+           
+          
+            
+            }
+      
     
-  
 
   ],
   
@@ -187,7 +144,7 @@
   
   const currentYear = new Date().getFullYear();
   
-  const newYearTime = new Date(`{{section.settings.month}} 00:00:00`);
+  const newYearTime = new Date(`{{section.settings.month}} {{section.settings.day}} {{section.settings.year}} 00:00:00`);
   
   // Update countdown time
   function updateCountdown() {
