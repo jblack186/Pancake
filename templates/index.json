@@ -111,13 +111,10 @@
     "1630717381540aa902": {
       "type": "countdown",
       "settings": {
-        "header_type": "headerOne",
-        "positions": false,
-        "header__background": "#ffffff",
-        "header__color": "#000000",
-        "height": 70,
-        "header_colors": "header-color1",
-        "logo_width": 100
+        "month": "February",
+        "Day": "2",
+        "year": "2023",
+        "hours": 37
       }
     }
   },
