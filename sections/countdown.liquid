@@ -155,12 +155,12 @@
   
   const currentYear = new Date().getFullYear();
   
-  const newYearTime = new Date(`{{section.settings.month}} {{section.settings.day}} {{section.settings.year}} {{section.settings.hours}}:{{section.settings.minutes}}:{{section.settings.seconds}}`);
-  console.log("newyear", newYearTime)
+  const saleDate = new Date(`{{section.settings.month}} {{section.settings.day}} {{section.settings.year}} {{section.settings.hours}}:{{section.settings.minutes}}:{{section.settings.seconds}}`);
+  console.log("newyear", saleDate)
   // Update countdown time
   function updateCountdown() {
     const currentTime = new Date();
-    const diff = newYearTime - currentTime;
+    const diff = saleDate - currentTime;
   
     const d = Math.floor(diff / 1000 / 60 / 60 / 24);
     const h = Math.floor(diff / 1000 / 60 / 60) % 24;
