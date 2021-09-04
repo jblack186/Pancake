@@ -111,12 +111,12 @@
     "1630717381540aa902": {
       "type": "countdown",
       "settings": {
-        "month": "January",
-        "Day": "1",
-        "year": "2022",
+        "month": "September",
+        "Day": "3",
+        "year": "2021",
         "hours": 0,
         "minutes": 0,
-        "seconds": 50
+        "seconds": 0
       }
     }
   },
