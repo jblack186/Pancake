@@ -15,9 +15,13 @@
           "menu": "main-jamies-menu",
           "menu_two": "main-menu",
           "countdown": true,
-          "month": "September",
+          "month": "October",
           "day": "5",
-          "year": "2021"
+          "year": "2021",
+          "countdown_background": "#8A2BE2",
+          "countdown_color": "#fff",
+          "countdown_text": "10% sale until Friday!",
+          "countdown_button-text": "Shop now"
         }
       },
       "footer": {
