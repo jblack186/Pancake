@@ -112,9 +112,9 @@
       "type": "countdown",
       "settings": {
         "month": "September",
-        "Day": "4",
+        "Day": "2",
         "year": "2021",
-        "hours": 2,
+        "hours": 0,
         "minutes": 0,
         "seconds": 0
       }
