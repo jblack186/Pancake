@@ -118,24 +118,7 @@
         "label": "Hours (max 24)"
        
 
-        },
-        {
-          "type": "number",
-          "id": "minutes",
-          "label": "Minutes (max 60)"
-
-         
-
-          },
-          {
-            "type": "number",
-            "id": "seconds",
-            "label": "Seconds (max 60)"
-
-           
-          
-            
-            }
+        }
       
     
 
@@ -159,7 +142,7 @@
   
   const currentYear = new Date().getFullYear();
   
-  const saleDate = new Date(`{{section.settings.month}} {{section.settings.day}} {{section.settings.year}} {{section.settings.hours}}:{{section.settings.minutes}}:{{section.settings.seconds}}`);
+  const saleDate = new Date(`{{section.settings.month}} {{section.settings.day}} {{section.settings.year}} {{section.settings.hours}}:00:00}`);
   console.log("sale date", saleDate)
   // Update countdown time
   function updateCountdown() {
