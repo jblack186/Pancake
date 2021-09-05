@@ -124,6 +124,10 @@ display: none;
  
 }
 
+.active {
+  display: block;
+}
+
  .mobile {
   display: none;
 }
