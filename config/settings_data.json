@@ -8,7 +8,7 @@
           "positions": true,
           "header__background": "#ffffff",
           "header__color": "#1a1b18",
-          "height": 95,
+          "height": 75,
           "header_colors": "header-color2",
           "logo": "shopify:\/\/shop_images\/atelier-logo-alt2-dark_2x_0e5bf336-f417-4b0f-9cac-9c1e8b138308.png",
           "logo_width": 200,
@@ -18,8 +18,8 @@
           "month": "October",
           "day": "5",
           "year": "2021",
-          "countdown_background": "#8A2BE2",
-          "countdown_color": "#fff",
+          "countdown_background": "#8a2be2",
+          "countdown_color": "#ffffff",
           "countdown_text": "10% sale until Friday!",
           "countdown_button-text": "Shop now"
         }
