@@ -74,13 +74,15 @@
       <ul class="collection-link__sub-links">
         {%- for childlink in link.links -%}
         <li><a href="{{ childlink.url }}">{{ childlink.title | escape }}</a></li>
+        <ul>
         {%- for grandchildlink in childlink.links -%}
-          <li>
-            <a href="{{ grandchildlink.url }}" class="">
+          <li class="collection-link__sub-links__sub-links">
+            <a href="{{ grandchildlink.url }}"  >
               {{ grandchildlink.title | escape }}
             </a>
           </li>
         {%- endfor -%}
+      </ul>
   
         {%- endfor -%}
       </ul>
@@ -464,4 +466,8 @@
     seconds.innerHTML = s < 10 ? '0' + s : s;
   }
   
-  setInterval(updateCountdown, 1000);</script>
+  setInterval(updateCountdown, 1000);
+
+  var parent = document.
+
+</script>

@@ -111,7 +111,18 @@
   margin-left: 28px;
 }
 
+/* dropdown  */
 
+.collection-link__sub-links {
+/* width: 100%;
+min-height: 400px;
+background: black; 
+color: white;
+position: absolute;
+z-index: 2; */
+display: none;
+ 
+}
 
  .mobile {
   display: none;
