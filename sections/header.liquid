@@ -77,7 +77,7 @@
         <ul>
         {%- for grandchildlink in childlink.links -%}
           <li class="collection-link__sub-links__sub-links">
-            <a href="{{ grandchildlink.url }}"  >
+            <a href="{{ grandchildlink.url }}">
               {{ grandchildlink.title | escape }}
             </a>
           </li>
@@ -475,5 +475,8 @@
   a_parent.forEach(function(a_parent_item) {
     console.log("hi",a_parent_item);
   }
+  function hello() {
 console.log('yo', a_parent)
+  }
+  hello();
 </script>
