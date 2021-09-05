@@ -160,6 +160,7 @@
 
     {% when 'headerTwo' %}
       <div class="{%- if section.settings.positions -%} headers-sticky{%else%} headers {%endif%}"  style="background: {{section.settings.header__background}}">
+        
         <ul class="header__list">
         <div class="header__list__mid">
           <a class="header__list__mid__logo">
@@ -441,6 +442,7 @@
 
 
 <script>
+  console.log('is this working')
   const days = document.getElementById('days');
   const hours = document.getElementById('hours');
   const minutes = document.getElementById('minutes');
@@ -468,6 +470,10 @@
   
   setInterval(updateCountdown, 1000);
 
-  var parent = document.
+  var a_parent = document.get.querySelectorAll(".header__list__left__item");
 
+  a_parent.forEach(function(a_parent_item) {
+    console.log("hi",a_parent_item);
+  }
+console.log('yo', a_parent)
 </script>
