@@ -14,7 +14,7 @@
           "logo_width": 200,
           "menu": "main-jamies-menu",
           "menu_two": "main-menu",
-          "countdown": true,
+          "countdown": false,
           "month": "October",
           "day": "5",
           "year": "2021",
