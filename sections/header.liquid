@@ -23,6 +23,12 @@
 #countdown h2{
   color: {{section.settings.countdown_color}};
 
+
+.dropdown-img {
+  width: 200px;
+  height: 300px;
+}
+
 }
 
 {%endif%}
@@ -74,9 +80,11 @@
         <a style="color: {{section.settings.header__color}}" class="link-title {{section.settings.header_colors}}">{{ link.title | escape }}</a>
 
         <ul id="collection-link__sub-links" class="collection-link__sub-links">
-
+          <img class="dropdown-img"  src="{{ 'model.jpg' | asset_url }}" alt="product" />
           {%- for childlink in link.links -%}
-          <li><a href="{{ childlink.url }}">{{ childlink.title | escape }}</a></li>
+           <div>
+            
+          <li class="title-container"><a class="child-title" href="{{ childlink.url }}">{{ childlink.title | escape }}</a></li>
           <ul class="sub_link-container">
           
           {%- for grandchildlink in childlink.links -%}
@@ -85,12 +93,13 @@
                 {{ grandchildlink.title | escape }}
               </a>
             </li>
-
+          
           {%- endfor -%}
-
+        
         </ul>
-
+</div>
           {%- endfor -%}
+          <img class="dropdown-img"  src="{{ 'model.jpg' | asset_url }}" alt="product" />
 
 
         </ul>
