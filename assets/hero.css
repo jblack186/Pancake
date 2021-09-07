@@ -5,6 +5,7 @@
   display: flex;
   position: relative;
   min-height: 88vh;
+  z-index: 5;
 }
 
 .hero.left {

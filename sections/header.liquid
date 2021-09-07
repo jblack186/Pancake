@@ -65,30 +65,42 @@
   <ul class="header__list">
     <div class="header__list__left">
      
-      {%- if link.links == blank -%}
+      <span class="close" >Close</span>
+
         {%- for link in section.settings.menu.links -%}
+        
           {%- if section.settings.menu != blank -%}
       <li class="header__list__left__item">
-        <a style="color: {{section.settings.header__color}}" href="{{ link.url }}" class="{{section.settings.header_colors}}">{{ link.title | escape }}</a>
-      </li>
-      <ul class="collection-link__sub-links">
-        {%- for childlink in link.links -%}
-        <li><a href="{{ childlink.url }}">{{ childlink.title | escape }}</a></li>
-        <ul>
-        {%- for grandchildlink in childlink.links -%}
-          <li class="collection-link__sub-links__sub-links">
-            <a href="{{ grandchildlink.url }}">
-              {{ grandchildlink.title | escape }}
-            </a>
-          </li>
-        {%- endfor -%}
-      </ul>
+        <a style="color: {{section.settings.header__color}}" class="link-title {{section.settings.header_colors}}">{{ link.title | escape }}</a>
+
+        <ul id="collection-link__sub-links" class="collection-link__sub-links">
+
+          {%- for childlink in link.links -%}
+          <li><a href="{{ childlink.url }}">{{ childlink.title | escape }}</a></li>
+          <ul class="sub_link-container">
+          
+          {%- for grandchildlink in childlink.links -%}
+            <li class="collection-link__sub-links__sub-links">
+              <a href="{{ grandchildlink.url }}">
+                {{ grandchildlink.title | escape }}
+              </a>
+            </li>
+
+          {%- endfor -%}
+
+        </ul>
+
+          {%- endfor -%}
+
+
+        </ul>
   
-        {%- endfor -%}
-      </ul>
+      </li>
     {%- endif -%}
+    
   {%- endfor -%}
-  {%- endif %}
+
+
 
       </div>
     
@@ -470,29 +482,64 @@
   
   setInterval(updateCountdown, 1000);
 
-  var a_parent =  document.querySelectorAll(".header__list__left__item");
-var dd_menu_a = document.querySelectorAll(".collection-link__sub-links");
+  function check() {
+  
+    console.log('im a parent');
+    alert("The second function executed successfully");
+  
+  
+  } 
 
-a_parent.forEach(function(aitem){
 
-		aitem.addEventListener("click", function(){
-			a_parent.forEach(function(aitem){
-				aitem.classList.remove("active");
+  document.getElementById("collection-link__sub-links").addEventListener("click", check);
+
+  
+
+
+  var parent_link = document.querySelectorAll(".header__list__left__item");
+  var child_link = document.querySelectorAll(".collection-link__sub-links");
+  let closer = document.querySelector(".close");
+console.log('hey',closer)
+
+
+
+parent_link.forEach(function(sub_list){
+		sub_list.addEventListener("click", function(){
+			parent_link.forEach(function(sub_list){
+				sub_list.classList.remove("active");
 			})
-			dd_menu_a.forEach(function(dd_menu_item){
-				dd_menu_item.classList.remove("active");
-			})
-			aitem.classList.add("active");
+			sub_list.classList.add("active");
+      closer.style.display = "block";
+
+
 		})
 })
 
-dd_menu_a.forEach(function(dd_menu_item){
+function closing() {
+  let closer = document.querySelector(".close");
+console.log(closer)
+  closer.style.display = "none";
 
-		dd_menu_item.addEventListener("click", function(){
-			dd_menu_a.forEach(function(dd_menu_item){
-				dd_menu_item.classList.remove("active");
-			})
-			dd_menu_item.classList.add("active");
-		})
-})
-]</script>
+}
+
+var menuClose = document.querySelectorAll(".close");
+function closeDropdown() {
+  let parent_link = document.querySelectorAll(".header__list__left__item");
+  let closer = document.querySelector(".close");
+
+
+  parent_link.forEach(function(sub_list){
+    sub_list.classList.remove("active");
+    
+
+  })
+closing();
+} 
+for (var i = 0; i < menuClose.length; i++) {
+  menuClose[i].addEventListener('click', closeDropdown)
+
+}
+
+
+
+</script>
